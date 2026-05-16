@@ -17,22 +17,23 @@
 #include <cmath>
 #include <cstdlib>
 
-using namespace std;
-NumGenerator::NumGenerator() {
-    // TODO Auto-generated constructor stub
+#include "NumGenerator.h"
+#include <cmath>
+#include <cstdlib>
 
+namespace flora {
+
+NumGenerator::NumGenerator() { }
+NumGenerator::~NumGenerator() { }
+NumGenerator::NumGenerator(const NumGenerator &other) { }
+
+double NumGenerator::exponential(double lambda) {
+    double u = (double)rand() / (RAND_MAX + 1.0);
+
+    if (u >= 1.0) u = 1.0 - 1e-12;
+
+    return -std::log(1.0 - u) / lambda;
 }
 
-NumGenerator::~NumGenerator() {
-    // TODO Auto-generated destructor stub
-}
-
-NumGenerator::NumGenerator(const NumGenerator &other) {
-    // TODO Auto-generated constructor stub
-
-}
-double NumGenerator::exponential(double lambda){
-    double u = (double)rand()/(RAND_MAX+1);
-    return -log(1-u)/lambda;
 }
 

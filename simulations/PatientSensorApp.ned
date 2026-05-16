@@ -14,11 +14,22 @@
 // 
 
 package test2;
-
 import flora.LoRaApp.SimpleLoRaApp;
 
-simple PatientSensorApp extends SimpleLoRaApp{
-    double uniform_rate_IAT= default(1);
-    double expo_rate_lambda= default(3);
-    double emergencyThreshold = default(20);
+simple PatientSensorApp extends SimpleLoRaApp {
+    parameters:
+        @class(flora::PatientSensorApp); // omnet bizim yaptığımız patientsensorapp logicini kullansın diye signature
+        
+        double expo_rate_lambda   = default(5);//arrival time 
+        double emergencyThreshold = default(40);
+
+        // statistik değerlerini tutmak için
+        @signal[urgentPacketSent](type=long);
+        @signal[normalPacketSent](type=long);
+        @signal[emergencyVariate](type=double);
+
+        // kpi
+        @statistic[urgentPacketSent](title="Urgent packets sent"; record=count,sum,vector);
+        @statistic[normalPacketSent](title="Normal packets sent"; record=count,sum,vector);
+        @statistic[emergencyVariate](title="Exponential variate samples"; record=vector,histogram);
 }

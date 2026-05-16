@@ -14,10 +14,13 @@ import inet.queueing.classifier.PriorityClassifier;
 import inet.queueing.source.ActivePacketSource;
 
 @license(LGPL);
-network LoRaNetworkTest
-{
+
+network LoRaNetworkTest {
+    parameters:
+        int numPatients = default(20);
+        
     submodules:
-        loRaNode: LoRaNode {
+        loRaNodes[numPatients]: LoRaNode {
             @display("p=287,373");
         }
         loRaGateway: LoRaGW {
@@ -27,8 +30,7 @@ network LoRaNetworkTest
             @display("p=833,64");
         }
         HospitalServer: StandardHost {
-            parameters:
-                @display("p=157,182");
+            @display("p=157,182");
         }
         configurator: Ipv4NetworkConfigurator {
             parameters:

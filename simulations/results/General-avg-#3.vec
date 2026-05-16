@@ -1,0 +1,147 @@
+version 3
+run General-3-20260515-22:38:33-101672
+attr configname General
+attr datetime 20260515-22:38:33
+attr datetimef 20260515-223833
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars "$0=\"avg\""
+attr iterationvarsd avg
+attr iterationvarsf avg-
+attr measurement "$0=\"avg\""
+attr network test2.LoRaNetworkTest
+attr processid 101672
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 3
+attr seedset 3
+config sim-time-limit 120s
+config network test2.LoRaNetworkTest
+config **.loRaNode.LoRaNic.radio.energyConsumer.typename LoRaEnergyConsumer
+config **.loRaNode.**.energySourceModule "\"^.IdealEpEnergyStorage\""
+config **.loRaNode.LoRaNic.radio.energyConsumer.configFile "xmldoc(\"energyConsumptionParam.xml\")"
+config **.maxTransmissionDuration 4s
+config **.energyDetection -110dBm
+config **.vector-recording true
+config rng-class cMersenneTwister
+config **.loRaGateway.numUdpApps 1
+config **.loRaGateway.packetForwarder.localPort 2000
+config **.loRaGateway.packetForwarder.destPort 1000
+config **.loRaGateway.packetForwarder.destAddresses "\"HospitalServer\""
+config **.HospitalServer.numApps 1
+config **.HospitalServer.**.evaluateADRinServer true
+config **.HospitalServer.app[0].typename HospitalServerApp
+config **.HospitalServer.app[0].destPort 2000
+config **.HospitalServer.app[0].localPort 1000
+config **.HospitalServer.app[0].adrMethod "\"avg\""
+config **.numberOfPacketsToSend 0
+config sim-time-limit 1d
+config simtime-resolution -11
+config repeat 5
+config **.timeToFirstPacket exponential(1000s)
+config **.timeToNextPacket exponential(1000s)
+config **.loRaNode.**.initialX 300m
+config **.loRaNode.**.initialY 350m
+config **.loRaNode.**initialLoRaSF 12
+config **.loRaNode.**initialLoRaTP 14dBm
+config **.loRaNode.**initialLoRaBW "125 kHz"
+config **.loRaNode.**initialLoRaCR 4
+config **.loRaNode.**.initFromDisplayString false
+config **.loRaNode.**.evaluateADRinNode true
+config **.loRaNode.numApps 1
+config **.loRaNode.app[0].typename PatientSensorApp
+config **.loRaGateway.**.initFromDisplayString false
+config **.constraintAreaMinX 0m
+config **.constraintAreaMinY 0m
+config **.constraintAreaMinZ 0m
+config **.constraintAreaMaxZ 0m
+config **.radio.radioMediumModule "\"LoRaMedium\""
+config **.minInterferenceTime 0s
+config **.constraintAreaMaxX 2376.0m
+config **.constraintAreaMaxY 1090.0m
+config **.loRaGateway.**.initialX 544.00m
+config **.loRaGateway.**.initialY 544.00m
+
+vector 0 LoRaNetworkTest.loRaGateway.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 1 LoRaNetworkTest.loRaGateway.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 2 LoRaNetworkTest.loRaGateway.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 3 LoRaNetworkTest.HospitalServer.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 4 LoRaNetworkTest.HospitalServer.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 5 LoRaNetworkTest.HospitalServer.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 6 LoRaNetworkTest.loRaNode.LoRaNic.radio.IdealEpEnergyStorage powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source powerConsumptionChanged
+attr title "Power consumption"
+vector 7 LoRaNetworkTest.loRaNode.LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 8 LoRaNetworkTest.loRaNode.LoRaNic.radio.energyConsumer powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source powerConsumptionChanged
+attr title "Power consumption"
+vector 9 LoRaNetworkTest.loRaGateway.LoRaGWNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 10 LoRaNetworkTest.loRaGateway.LoRaGWNic.radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source receptionStateChanged
+attr title "Radio reception state"
+vector 11 LoRaNetworkTest.loRaGateway.LoRaGWNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+0	0	0	0
+1	0	0	0
+2	0	0	0
+3	0	0	0
+4	0	0	0
+5	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	0
+7	0	0	0
+7	0	0	0
+7	0	0	1
+8	0	0	0
+8	0	0	0
+8	0	0	0
+9	0	0	0
+9	0	0	0
+9	0	0	4
+10	0	0	1
+11	0	0	1
+

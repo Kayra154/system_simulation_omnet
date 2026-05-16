@@ -15,11 +15,17 @@
 
 #ifndef NUMGENERATOR_H_
 #define NUMGENERATOR_H_
+
+namespace flora { // override çalışmamasının sebebi flora namespace içinde olması gerektiğindenmiş. FLoRa namespace'ine aldım
+
 class NumGenerator {
 public:
     NumGenerator();
     virtual ~NumGenerator();
     NumGenerator(const NumGenerator &other);
+
     static double exponential(double lambda);
 };
-#endif /* NUMGENERATOR_H_ */
+
+} // namespace flora içinde artık override sorunu olmayacak
+#endif

@@ -27,7 +27,7 @@ NumGenerator::NumGenerator() { }
 NumGenerator::~NumGenerator() { }
 NumGenerator::NumGenerator(const NumGenerator &other) { }
 
-double NumGenerator::exponential(double lambda) {
+double NumGenerator::exponential(double lambda) { // 1/lambda = frequency or arrival rate or service rate
     double u = (double)rand() / (RAND_MAX + 1.0);
 
     if (u >= 1.0) u = 1.0 - 1e-12;

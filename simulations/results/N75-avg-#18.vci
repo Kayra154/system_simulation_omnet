@@ -1,0 +1,549 @@
+file 141695 1779060435                                          
+version 3
+run N75-18-20260518-02:27:14-159888
+attr configname N75
+attr datetime 20260518-02:27:14
+attr datetimef 20260518-022714
+attr experiment N75
+attr inifile omnetpp.ini
+attr iterationvars "$0=\"avg\""
+attr iterationvarsd avg
+attr iterationvarsf avg-
+attr measurement "$0=\"avg\""
+attr network test2.LoRaNetworkTest
+attr processid 159888
+attr repetition 18
+attr replication #18
+attr resultdir results
+attr runnumber 18
+attr seedset 18
+config extends General
+config **.numPatients 75
+config network test2.LoRaNetworkTest
+config sim-time-limit 1h
+config warmup-period 60s
+config simtime-resolution -11
+config repeat 30
+config rng-class cMersenneTwister
+config record-eventlog false
+config **.numPatients 20
+config **.HospitalServer.app[0].queueLength:vector.vector-recording true
+config **.HospitalServer.app[0].urgentWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].normalWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].urgentEndToEndDelay:vector.vector-recording true
+config **.HospitalServer.app[0].normalEndToEndDelay:vector.vector-recording true
+config **.loRaNodes[*].app[0].emergencyVariate:vector.vector-recording true
+config **.vector-recording false
+config **.loRaNodes[0].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[0].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[1].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[1].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[2].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[2].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[3].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[3].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[4].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[4].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[5].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[5].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[6].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[6].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[7].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[7].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[8].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[8].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[9].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[9].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[10].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[10].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[11].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[11].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[12].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[12].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[13].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[13].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[14].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[14].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[15].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[15].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[16].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[16].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[17].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[17].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[18].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[18].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[19].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[19].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[20].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[20].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[21].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[21].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[22].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[22].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[23].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[23].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[24].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[24].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[25].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[25].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[26].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[26].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[27].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[27].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[28].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[28].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[29].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[29].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[30].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[30].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[31].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[31].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[32].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[32].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[33].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[33].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[34].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[34].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[35].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[35].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[36].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[36].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[37].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[37].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[38].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[38].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[39].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[39].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[40].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[40].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[41].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[41].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[42].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[42].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[43].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[43].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[44].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[44].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[45].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[45].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[46].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[46].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[47].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[47].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[48].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[48].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[49].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[49].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[50].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[50].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[51].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[51].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[52].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[52].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[53].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[53].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[54].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[54].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[55].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[55].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[56].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[56].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[57].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[57].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[58].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[58].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[59].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[59].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[60].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[60].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[61].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[61].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[62].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[62].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[63].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[63].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[64].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[64].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[65].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[65].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[66].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[66].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[67].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[67].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[68].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[68].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[69].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[69].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[70].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[70].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[71].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[71].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[72].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[72].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[73].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[73].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[74].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[74].**.initialY "1090m + uniform(-8m, 8m)"
+config **.HospitalServer.numApps 1
+config **.HospitalServer.app[0].typename HospitalServerApp
+config **.HospitalServer.app[0].destPort 2000
+config **.HospitalServer.app[0].localPort 1000
+config **.HospitalServer.app[0].adrMethod "\"avg\""
+config **.HospitalServer.**.evaluateADRinServer true
+config **.HospitalServer.app[0].queueSize 50
+config **.HospitalServer.app[0].expo_rate_lambda 0.83
+config **.loRaGateway.numUdpApps 1
+config **.loRaGateway.packetForwarder.localPort 2000
+config **.loRaGateway.packetForwarder.destPort 1000
+config **.loRaGateway.packetForwarder.destAddresses "\"HospitalServer\""
+config **.loRaGateway.**.initFromDisplayString false
+config **.loRaGateway.**.initialX 544.00m
+config **.loRaGateway.**.initialY 544.00m
+config **.loRaNodes[*].numApps 1
+config **.loRaNodes[*].app[0].typename PatientSensorApp
+config **.loRaNodes[*].app[0].expo_rate_lambda 0.00175
+config **.loRaNodes[*].app[0].emergencyThreshold 50
+config **.loRaNodes[*].**.timeToFirstPacket exponential(24s)
+config **.loRaNodes[*].**.timeToNextPacket exponential(24s)
+config **.loRaNodes[*].**.numberOfPacketsToSend 0
+config **.loRaNodes[*].**initialLoRaSF 12
+config **.loRaNodes[*].**initialLoRaTP 14dBm
+config **.loRaNodes[*].**initialLoRaBW "125 kHz"
+config **.loRaNodes[*].**initialLoRaCR 4
+config **.loRaNodes[*].**.initFromDisplayString false
+config **.loRaNodes[*].**.evaluateADRinNode true
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.typename LoRaEnergyConsumer
+config **.loRaNodes[*].**.energySourceModule "\"^.IdealEpEnergyStorage\""
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.configFile "xmldoc(\"energyConsumptionParam.xml\")"
+config **.maxTransmissionDuration 4s
+config **.energyDetection -110dBm
+config **.radio.radioMediumModule "\"LoRaMedium\""
+config **.minInterferenceTime 0s
+config **.constraintAreaMinX 0m
+config **.constraintAreaMinY 0m
+config **.constraintAreaMinZ 0m
+config **.constraintAreaMaxZ 0m
+config **.constraintAreaMaxX 3000.0m
+config **.constraintAreaMaxY 3000.0m
+
+vector 0 LoRaNetworkTest.loRaNodes[66].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 1 LoRaNetworkTest.loRaNodes[14].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 2 LoRaNetworkTest.loRaNodes[57].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 3 LoRaNetworkTest.loRaNodes[53].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 4 LoRaNetworkTest.HospitalServer.app[0] queueLength:vector ETV
+attr recordingmode vector
+attr title "Total queue length"
+vector 5 LoRaNetworkTest.HospitalServer.app[0] normalWaitTime:vector ETV
+attr recordingmode vector
+attr title "Normal wait time (s)"
+vector 6 LoRaNetworkTest.HospitalServer.app[0] normalEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Normal end-to-end delay (s)"
+vector 7 LoRaNetworkTest.loRaNodes[64].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 8 LoRaNetworkTest.loRaNodes[49].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 9 LoRaNetworkTest.loRaNodes[6].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 10 LoRaNetworkTest.loRaNodes[32].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 11 LoRaNetworkTest.loRaNodes[39].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 12 LoRaNetworkTest.HospitalServer.app[0] urgentWaitTime:vector ETV
+attr recordingmode vector
+attr title "Urgent wait time (s)"
+vector 13 LoRaNetworkTest.HospitalServer.app[0] urgentEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Urgent end-to-end delay (s)"
+vector 14 LoRaNetworkTest.loRaNodes[61].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 15 LoRaNetworkTest.loRaNodes[69].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 16 LoRaNetworkTest.loRaNodes[63].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 17 LoRaNetworkTest.loRaNodes[47].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 18 LoRaNetworkTest.loRaNodes[21].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 19 LoRaNetworkTest.loRaNodes[73].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 20 LoRaNetworkTest.loRaNodes[30].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 21 LoRaNetworkTest.loRaNodes[20].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 22 LoRaNetworkTest.loRaNodes[1].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 23 LoRaNetworkTest.loRaNodes[10].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 24 LoRaNetworkTest.loRaNodes[58].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 25 LoRaNetworkTest.loRaNodes[33].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 26 LoRaNetworkTest.loRaNodes[65].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 27 LoRaNetworkTest.loRaNodes[9].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 28 LoRaNetworkTest.loRaNodes[23].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 29 LoRaNetworkTest.loRaNodes[36].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 30 LoRaNetworkTest.loRaNodes[62].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 31 LoRaNetworkTest.loRaNodes[7].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 32 LoRaNetworkTest.loRaNodes[17].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 33 LoRaNetworkTest.loRaNodes[51].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 34 LoRaNetworkTest.loRaNodes[12].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 35 LoRaNetworkTest.loRaNodes[41].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 36 LoRaNetworkTest.loRaNodes[38].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 37 LoRaNetworkTest.loRaNodes[42].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 38 LoRaNetworkTest.loRaNodes[31].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 39 LoRaNetworkTest.loRaNodes[25].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 40 LoRaNetworkTest.loRaNodes[8].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 41 LoRaNetworkTest.loRaNodes[3].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 42 LoRaNetworkTest.loRaNodes[43].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 43 LoRaNetworkTest.loRaNodes[37].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 44 LoRaNetworkTest.loRaNodes[48].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 45 LoRaNetworkTest.loRaNodes[70].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 46 LoRaNetworkTest.loRaNodes[40].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 47 LoRaNetworkTest.loRaNodes[15].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 48 LoRaNetworkTest.loRaNodes[27].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 49 LoRaNetworkTest.loRaNodes[59].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 50 LoRaNetworkTest.loRaNodes[0].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 51 LoRaNetworkTest.loRaNodes[54].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 52 LoRaNetworkTest.loRaNodes[5].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 53 LoRaNetworkTest.loRaNodes[72].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 54 LoRaNetworkTest.loRaNodes[2].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 55 LoRaNetworkTest.loRaNodes[4].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 56 LoRaNetworkTest.loRaNodes[50].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 57 LoRaNetworkTest.loRaNodes[68].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 58 LoRaNetworkTest.loRaNodes[22].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 59 LoRaNetworkTest.loRaNodes[13].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 60 LoRaNetworkTest.loRaNodes[74].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 61 LoRaNetworkTest.loRaNodes[55].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 62 LoRaNetworkTest.loRaNodes[28].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 63 LoRaNetworkTest.loRaNodes[18].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 64 LoRaNetworkTest.loRaNodes[26].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 65 LoRaNetworkTest.loRaNodes[11].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 66 LoRaNetworkTest.loRaNodes[16].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 67 LoRaNetworkTest.loRaNodes[44].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 68 LoRaNetworkTest.loRaNodes[24].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 69 LoRaNetworkTest.loRaNodes[67].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 70 LoRaNetworkTest.loRaNodes[19].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 71 LoRaNetworkTest.loRaNodes[52].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 72 LoRaNetworkTest.loRaNodes[60].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 73 LoRaNetworkTest.loRaNodes[45].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 74 LoRaNetworkTest.loRaNodes[71].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 75 LoRaNetworkTest.loRaNodes[35].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 76 LoRaNetworkTest.loRaNodes[29].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 77 LoRaNetworkTest.loRaNodes[46].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 78 LoRaNetworkTest.loRaNodes[34].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 79 LoRaNetworkTest.loRaNodes[56].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+0	23998 822 11127 234554 63.9005718693 3579.31176091552 20 4.1528056268078 1521.7429210562 12990.037914679 12296144.554324
+1	24820 740 11205 226879 64.88789656432 3463.50016153485 18 11.568812424628 3191.4808352277 8673.7086280293 13530260.045968
+2	25560 736 11445 224242 72.90961851386 3425.75536222533 18 11.408166312452 1799.913406579 10176.924561658 12100066.021449
+3	26296 777 11600 225816 76.50155260631 3446.68565963353 19 17.651067555517 2428.2990271901 10624.630199068 13437478.106461
+4	27073 25104 11764 235813 78.21368325156 3596.64114937337 922 0 2 463 465
+5	52177 16710 11764 235515 78.21368325156 3590.85419511674 427 1.71212965204 5.99134367069 749.76218130892 1358.766345497
+6	68887 16710 11764 235515 78.21368325156 3590.85419511674 427 1.71212965204 5.99134367069 749.76218130892 1358.766345497
+7	85597 741 11786 225894 83.52170340124 3446.82554301139 18 39.292658586229 2337.4654263761 9938.0832714781 10906171.292768
+8	86338 740 11945 225736 100.4044525343 3446.32771466364 18 0.42597777696052 2532.2584329688 12348.859247403 19029321.65182
+9	87078 733 12104 230641 107.98288054253 3510.1129516655 18 41.688177943249 948.06176442478 6124.4990090711 3085639.8344327
+10	87811 758 12263 224064 180.17973094972 3421.17235689796 18 16.180841608477 3426.2889996879 12332.347357112 21172688.985388
+11	88569 756 12341 230876 181.08124396565 3512.23557181335 18 37.343935428661 2266.2655674843 15067.224373125 19336212.428682
+12	89325 1366 12541 235813 181.89186310576 3596.64114937337 34 1.71212965204 6.25179431833 62.752116335 135.82088334987
+13	90691 1366 12541 235813 181.89186310576 3596.64114937337 34 1.71212965204 6.25179431833 62.752116335 135.82088334987
+14	92057 715 12629 227250 186.05719969083 3472.51316352496 17 1.3918800598188 1566.2875484822 9613.0501483437 9232636.6126229
+15	92772 759 12709 234146 187.04269326949 3568.83054147456 18 2.4350857574536 1391.5288302523 8753.8166013822 7956263.9519572
+16	93531 760 12787 228860 187.24300056646 3485.10151372473 18 7.6621602814192 2711.6677347378 15818.808374109 24488743.122523
+17	94291 758 12961 235340 188.49053019869 3589.1420629695 18 18.222165495513 2073.3103484174 8895.9644376819 10664620.577792
+18	95049 760 13116 229098 188.79820961528 3486.03930884767 18 48.943978505482 2302.6443146571 11528.744812402 13696694.594313
+19	95809 758 13271 228703 189.51581333065 3484.31699648234 18 20.774807521463 1457.8406318366 8720.3799825558 8333671.0146393
+20	96567 761 13430 227749 190.39424354307 3480.19179816717 18 0.91529114910498 2429.2215171522 15152.582353011 20175390.498689
+21	97328 797 13508 235520 190.41315449746 3593.42701284903 19 125.54217702822 2071.8735056506 12663.344560579 13462995.071231
+22	98125 758 13747 227482 191.86882979692 3474.4731406888 18 2.933588369926 1647.6248070378 9696.5818301933 8700564.3134888
+23	98883 757 14010 227328 193.3007519853 3473.2636912097 18 48.902895313562 2581.2544433939 10669.078166985 14286737.356143
+24	99640 757 14089 233818 193.34987557625 3566.65728741377 18 102.93327302889 1872.4166390962 9476.2063372562 8414522.107289
+25	100397 758 14168 227983 193.52283353716 3481.47900063597 18 71.328946629394 2144.0985586789 13082.029866839 14952859.993858
+26	101155 755 14322 231298 193.80086961197 3522.572402137 18 62.880736030454 1181.4148214404 7017.1041037313 4859263.9584601
+27	101910 755 14408 232041 194.83406412847 3534.31744859893 18 16.751185394587 1104.4045767416 5290.469165418 2986995.9502141
+28	102665 758 14818 232594 196.02237658536 3540.10493484991 18 75.028052796812 1717.3858454651 12038.217521585 11760540.209726
+29	103423 756 15090 234306 198.13153068853 3571.3401595397 18 31.758141878566 2166.2466389017 11725.813892369 13885713.238029
+30	104179 759 15266 231861 201.03556565743 3530.85277305287 18 24.795094990934 1362.7788592393 7822.809996027 6411106.5180186
+31	104938 760 15347 227905 202.32234261048 3480.58611712303 18 5.7076584243516 2910.8019038519 12696.741335871 16670297.623219
+32	105698 717 15425 234807 202.46035881929 3581.25088754754 17 49.827680071665 1357.1518703455 7914.0500730401 5719001.3685913
+33	106415 758 15759 229625 204.17819027747 3496.13956747059 18 27.774391836782 1826.6459355511 7795.79296333 7909315.1532146
+34	107173 801 15938 235601 205.95957253188 3594.92901936798 19 14.563384501941 3184.8090147104 9251.6861048634 15781156.548135
+35	107974 754 16019 232513 206.43414210187 3539.4923780992 18 20.995411187917 1632.3686572904 9433.5464396416 8882067.7529674
+36	108728 674 16097 221906 206.62777982787 3373.6977316362 16 4.0427683015101 1691.7874810349 8398.2331848914 7990920.466586
+37	109402 754 16177 224477 206.87544540976 3427.467895532 18 27.60743881528 2168.1647653045 12315.132328093 15600336.725873
+38	110156 759 16256 226224 206.91246935033 3453.62701332927 18 134.48985902799 1421.7016192905 8758.437750388 6818122.5909263
+39	110915 759 16747 225240 209.07381343866 3440.82898146702 18 2.2563247548215 1729.4153765937 10587.710586171 11927758.874113
+40	111674 713 16833 226723 209.90432743 3462.03449942253 17 3.3155020815989 1906.1193327413 8280.440907144 8243274.1193322
+41	112387 756 16995 225061 211.44336853158 3437.09194571984 18 2.9258451376922 1327.8084132512 9212.2126722864 7447130.7381335
+42	113143 761 17156 226302 212.04990495777 3454.79368924709 18 100.28874567165 1946.4688086987 10666.361281582 11004162.461909
+43	113904 754 17400 224898 213.81609243418 3432.0687874042 18 16.480637779816 2208.7294986668 7801.0173338842 8139783.3374976
+44	114658 759 17561 231699 215.56218012583 3527.8512336573 18 2.80476951524 1528.7276031661 7613.6925663777 6418356.9013022
+45	115417 760 17647 233182 217.26722699317 3547.77297933814 18 4.8380097932644 1516.5419974636 7823.740882233 6017836.8701959
+46	116177 798 17802 233896 217.70644488561 3566.82157733971 19 25.62860488195 1620.8985316503 8353.0804276437 6756394.1479326
+47	116975 760 17880 229265 217.7333135213 3487.42959884062 18 6.6815737124604 1207.0793669953 6413.684748937 4016043.3246232
+48	117735 760 17962 225576 218.65727373194 3444.39158831289 18 7.2675509543995 2114.9598339488 9878.2731519206 10327006.941318
+49	118495 763 18292 227827 220.24702257287 3480.47968106404 18 0.00099039589333554 982.84876418643 4793.0531668315 2784829.3268192
+50	119258 756 18451 230140 220.57752800218 3501.9507021821 18 55.084671048064 2370.0679430883 11392.759949753 14043492.700848
+51	120014 757 18530 231534 220.83404494948 3524.859517135 18 19.336929219135 1397.3171646961 9182.0887689828 8365667.3120966
+52	120771 758 18609 231124 220.99338922364 3521.43259291621 18 15.580676689018 2725.7709787508 9826.4792934491 12782701.052034
+53	121529 716 18693 223397 221.94297892954 3411.36067043763 17 41.919833078067 1750.5184096873 10022.543616856 9232111.7457552
+54	122245 758 19191 229879 223.96551251965 3499.44987123007 18 0.5175978753443 1187.7372510566 7045.3519830298 5416357.1461887
+55	123003 716 19269 220079 224.23841157131 3346.43050646209 17 94.369204642511 1224.1471308534 9333.8647600876 7382228.4824736
+56	123719 755 19348 226476 224.3151743009 3455.34968093429 18 18.023336632283 2253.9012886138 8809.0286311343 10151889.24738
+57	124474 762 19673 232904 226.46944073324 3541.71312186633 18 8.3287424292987 1759.2342881742 9852.4603621618 10698432.257725
+58	125236 758 19757 231046 226.91876689375 3520.09866623658 18 53.415954713753 1089.8210187398 5731.0032202363 3131761.4843537
+59	125994 763 20025 229963 229.90352509722 3500.89073067461 18 0.7909664951079 2684.5924178931 10969.640346671 13615047.641266
+60	126757 714 20103 225319 229.93423114748 3441.3984563018 17 21.923765781039 2010.3991995056 10174.454951943 11624054.288308
+61	127471 762 20371 232199 233.49604955312 3536.81136088308 18 23.115957262884 1768.2831398858 11207.17509672 13088786.828064
+62	128233 759 20453 232434 235.1298199902 3538.66404722053 18 0.88772711516294 2667.8677134622 10601.225561913 12747084.954381
+63	128992 759 20628 228137 235.41553108645 3482.16273550645 18 23.270603533038 1424.3352069007 7886.277339992 5755603.0100252
+64	129751 758 20711 223475 236.04088815702 3411.4201413137 18 0.31266265739283 1340.9818294471 6072.1088572049 4389007.5002788
+65	130509 800 20945 235123 237.61394506409 3584.95256621523 19 5.992184312331 1883.4971150273 11153.485750352 11346425.303733
+66	131309 761 21206 233578 239.80228174818 3560.25185947866 18 10.42318002509 2144.1990208977 7894.8140801058 8849262.9526384
+67	132070 718 21396 232356 243.10394827589 3538.58126474553 17 7.319117410117 2869.7169595132 9470.6044593205 15999540.352514
+68	132788 719 21562 230464 250.92654041372 3508.42842392083 17 7.4242467122717 1470.7635944364 7424.8940777879 6560564.0774342
+69	133507 715 21916 228622 256.0829705231 3484.0140998486 17 33.424586289646 2787.899060969 13409.198502256 22313900.370018
+70	134222 761 22081 234888 260.00014406869 3582.78981366116 18 32.028041748921 1809.2889603731 13185.089567697 15118608.446729
+71	134983 761 22159 229547 260.43819716817 3494.78671890206 18 24.037858723843 1836.7250374268 9915.446916487 9314296.3134561
+72	135744 758 22566 234476 262.58546677007 3577.65244640323 18 18.960388673592 3137.9159572157 12148.683160772 18573490.265849
+73	136502 757 22732 228367 265.51311476078 3482.8544291317 18 30.456690255552 2093.1058235937 13097.415603281 15001386.105371
+74	137259 716 22922 233500 268.9374470172 3558.70774243855 17 31.731446347954 1756.2836981937 11769.756175573 14958813.550032
+75	137975 761 23001 233336 269.29688467167 3550.04598936425 18 62.418092030113 3694.6317697342 15773.036380848 31355283.559592
+76	138736 760 23156 235859 270.67366165712 3599.0263954573 18 0.78031162876619 2590.4944664273 7505.1253786613 9345445.6969415
+77	139496 718 23711 226801 275.53292694127 3462.96442366902 17 13.787726862668 3086.1259352742 8475.8016848594 12808207.143382
+78	140214 761 23896 230384 278.83770468814 3506.76976811535 18 34.899584937262 1955.6351333975 6864.498251893 6003977.2327429
+79	140975 719 24588 224321 301.7643825064 3426.28587126691 17 18.020905712771 1227.3411440422 6421.7577318006 4139809.9797916
+

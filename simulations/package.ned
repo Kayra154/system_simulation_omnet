@@ -12,13 +12,10 @@ import inet.queueing.sink.ActivePacketSink;
 import inet.queueing.queue.PacketQueue;
 import inet.queueing.classifier.PriorityClassifier;
 import inet.queueing.source.ActivePacketSource;
-
 @license(LGPL);
-
 network LoRaNetworkTest {
     parameters:
         int numPatients = default(20);
-        
     submodules:
         loRaNodes[numPatients]: LoRaNode {
             @display("p=287,373");

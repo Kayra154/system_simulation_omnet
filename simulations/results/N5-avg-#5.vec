@@ -1,0 +1,630 @@
+version 3
+run N5-5-20260518-02:19:36-158405
+attr configname N5
+attr datetime 20260518-02:19:36
+attr datetimef 20260518-021936
+attr experiment N5
+attr inifile omnetpp.ini
+attr iterationvars "$0=\"avg\""
+attr iterationvarsd avg
+attr iterationvarsf avg-
+attr measurement "$0=\"avg\""
+attr network test2.LoRaNetworkTest
+attr processid 158405
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 5
+attr seedset 5
+config extends General
+config **.numPatients 5
+config network test2.LoRaNetworkTest
+config sim-time-limit 1h
+config warmup-period 60s
+config simtime-resolution -11
+config repeat 30
+config rng-class cMersenneTwister
+config record-eventlog false
+config **.numPatients 20
+config **.HospitalServer.app[0].queueLength:vector.vector-recording true
+config **.HospitalServer.app[0].urgentWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].normalWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].urgentEndToEndDelay:vector.vector-recording true
+config **.HospitalServer.app[0].normalEndToEndDelay:vector.vector-recording true
+config **.loRaNodes[*].app[0].emergencyVariate:vector.vector-recording true
+config **.vector-recording false
+config **.loRaNodes[0].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[0].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[1].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[1].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[2].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[2].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[3].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[3].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[4].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[4].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[5].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[5].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[6].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[6].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[7].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[7].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[8].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[8].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[9].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[9].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[10].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[10].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[11].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[11].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[12].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[12].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[13].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[13].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[14].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[14].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[15].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[15].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[16].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[16].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[17].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[17].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[18].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[18].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[19].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[19].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[20].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[20].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[21].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[21].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[22].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[22].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[23].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[23].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[24].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[24].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[25].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[25].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[26].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[26].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[27].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[27].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[28].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[28].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[29].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[29].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[30].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[30].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[31].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[31].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[32].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[32].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[33].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[33].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[34].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[34].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[35].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[35].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[36].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[36].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[37].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[37].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[38].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[38].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[39].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[39].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[40].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[40].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[41].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[41].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[42].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[42].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[43].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[43].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[44].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[44].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[45].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[45].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[46].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[46].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[47].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[47].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[48].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[48].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[49].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[49].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[50].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[50].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[51].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[51].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[52].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[52].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[53].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[53].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[54].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[54].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[55].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[55].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[56].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[56].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[57].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[57].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[58].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[58].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[59].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[59].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[60].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[60].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[61].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[61].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[62].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[62].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[63].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[63].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[64].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[64].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[65].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[65].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[66].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[66].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[67].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[67].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[68].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[68].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[69].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[69].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[70].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[70].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[71].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[71].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[72].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[72].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[73].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[73].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[74].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[74].**.initialY "1090m + uniform(-8m, 8m)"
+config **.HospitalServer.numApps 1
+config **.HospitalServer.app[0].typename HospitalServerApp
+config **.HospitalServer.app[0].destPort 2000
+config **.HospitalServer.app[0].localPort 1000
+config **.HospitalServer.app[0].adrMethod "\"avg\""
+config **.HospitalServer.**.evaluateADRinServer true
+config **.HospitalServer.app[0].queueSize 50
+config **.HospitalServer.app[0].expo_rate_lambda 0.83
+config **.loRaGateway.numUdpApps 1
+config **.loRaGateway.packetForwarder.localPort 2000
+config **.loRaGateway.packetForwarder.destPort 1000
+config **.loRaGateway.packetForwarder.destAddresses "\"HospitalServer\""
+config **.loRaGateway.**.initFromDisplayString false
+config **.loRaGateway.**.initialX 544.00m
+config **.loRaGateway.**.initialY 544.00m
+config **.loRaNodes[*].numApps 1
+config **.loRaNodes[*].app[0].typename PatientSensorApp
+config **.loRaNodes[*].app[0].expo_rate_lambda 0.00175
+config **.loRaNodes[*].app[0].emergencyThreshold 50
+config **.loRaNodes[*].**.timeToFirstPacket exponential(24s)
+config **.loRaNodes[*].**.timeToNextPacket exponential(24s)
+config **.loRaNodes[*].**.numberOfPacketsToSend 0
+config **.loRaNodes[*].**initialLoRaSF 12
+config **.loRaNodes[*].**initialLoRaTP 14dBm
+config **.loRaNodes[*].**initialLoRaBW "125 kHz"
+config **.loRaNodes[*].**initialLoRaCR 4
+config **.loRaNodes[*].**.initFromDisplayString false
+config **.loRaNodes[*].**.evaluateADRinNode true
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.typename LoRaEnergyConsumer
+config **.loRaNodes[*].**.energySourceModule "\"^.IdealEpEnergyStorage\""
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.configFile "xmldoc(\"energyConsumptionParam.xml\")"
+config **.maxTransmissionDuration 4s
+config **.energyDetection -110dBm
+config **.radio.radioMediumModule "\"LoRaMedium\""
+config **.minInterferenceTime 0s
+config **.constraintAreaMinX 0m
+config **.constraintAreaMinY 0m
+config **.constraintAreaMinZ 0m
+config **.constraintAreaMaxZ 0m
+config **.constraintAreaMaxX 3000.0m
+config **.constraintAreaMaxY 3000.0m
+
+vector 0 LoRaNetworkTest.loRaNodes[1].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 1 LoRaNetworkTest.HospitalServer.app[0] queueLength:vector ETV
+attr recordingmode vector
+attr title "Total queue length"
+vector 2 LoRaNetworkTest.HospitalServer.app[0] normalWaitTime:vector ETV
+attr recordingmode vector
+attr title "Normal wait time (s)"
+vector 3 LoRaNetworkTest.HospitalServer.app[0] normalEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Normal end-to-end delay (s)"
+vector 4 LoRaNetworkTest.loRaNodes[0].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 5 LoRaNetworkTest.loRaNodes[2].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 6 LoRaNetworkTest.loRaNodes[3].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 7 LoRaNetworkTest.loRaNodes[4].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 8 LoRaNetworkTest.HospitalServer.app[0] urgentWaitTime:vector ETV
+attr recordingmode vector
+attr title "Urgent wait time (s)"
+vector 9 LoRaNetworkTest.HospitalServer.app[0] urgentEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Urgent end-to-end delay (s)"
+0	170	112.57991103766	630.62934959648
+0	348	298.02987374068	291.23398061797
+0	510	474.09705267165	3.1141217285221
+0	820	708.10603365899	111.40609798444
+0	980	906.15441960185	688.63169909737
+0	1260	1137.84668330274	942.8844196832
+0	1471	1318.14850031657	559.95319482955
+0	1660	1529.50764291366	88.809552046097
+0	1852	1731.64393247945	63.757531927644
+0	2041	1922.88298791574	1678.56089403
+0	2343	2128.79930313087	567.15553793177
+0	2554	2301.71393920316	191.13098128113
+0	2765	2474.99870793262	60.64152772983
+0	2953	2647.37337143914	261.12180505337
+0	3170	2856.34778142952	352.79635960197
+0	3362	3035.09588051352	790.89684435833
+0	3595	3226.10552717385	194.70489249873
+0	3737	3413.85663254217	852.52040824241
+1	202	114.29204147174	1
+1	202	114.29204147174	0
+1	271	182.82115254585	1
+1	271	182.82115254585	0
+1	312	221.54059725831	1
+1	312	221.54059725831	0
+1	386	299.74200417476	1
+1	386	299.74200417476	0
+1	460	377.6803119891	1
+1	460	377.6803119891	0
+1	501	436.8779221504	1
+1	501	436.8779221504	0
+1	542	475.80918310573	1
+1	542	475.80918310573	0
+1	583	480.21771421953	1
+1	583	480.21771421953	0
+1	652	506.14226988655	1
+1	652	506.14226988655	0
+1	693	573.76177305718	1
+1	693	573.76177305718	0
+1	762	630.11108482794	1
+1	762	630.11108482794	0
+1	803	652.61641994171	1
+1	803	652.61641994171	0
+1	910	803.21591070557	1
+1	910	803.21591070557	0
+1	971	830.36411656519	1
+1	971	830.36411656519	0
+1	1012	907.86655003593	1
+1	1012	907.86655003593	0
+1	1100	976.58367295833	1
+1	1100	976.58367295833	0
+1	1141	1038.84670620328	1
+1	1141	1038.84670620328	0
+1	1182	1058.70965583619	1
+1	1182	1058.70965583619	0
+1	1251	1104.2926285265	1
+1	1251	1104.2926285265	0
+1	1292	1139.55881373682	1
+1	1292	1139.55881373682	0
+1	1333	1154.2643139191	1
+1	1333	1154.2643139191	0
+1	1374	1216.27170139604	1
+1	1374	1216.27170139604	0
+1	1443	1300.02735510477	1
+1	1443	1300.02735510477	0
+1	1503	1319.86063075065	1
+1	1503	1319.86063075065	0
+1	1544	1399.10838640425	1
+1	1544	1399.10838640425	0
+1	1632	1485.82092875517	1
+1	1632	1485.82092875517	0
+1	1692	1531.21977334774	1
+1	1692	1531.21977334774	0
+1	1733	1589.46953234364	1
+1	1733	1589.46953234364	0
+1	1774	1605.32540784543	1
+1	1774	1605.32540784543	0
+1	1843	1661.82272636553	1
+1	1843	1661.82272636553	0
+1	1884	1733.35606291353	1
+1	1884	1733.35606291353	0
+1	1972	1783.99884503003	1
+1	1972	1783.99884503003	0
+1	2032	1835.00154443433	1
+1	2032	1835.00154443433	0
+1	2101	1924.59512085382	1
+1	2101	1924.59512085382	0
+1	2142	1932.62327537985	1
+1	2142	1932.62327537985	0
+1	2183	1956.96134909514	1
+1	2183	1956.96134909514	0
+1	2224	1993.97480885276	1
+1	2224	1993.97480885276	0
+1	2265	2039.14450421842	1
+1	2265	2039.14450421842	0
+1	2334	2110.69537954316	1
+1	2334	2110.69537954316	0
+1	2375	2130.51143356495	1
+1	2375	2130.51143356495	0
+1	2416	2173.70321359305	1
+1	2416	2173.70321359305	0
+1	2465	2229.61362705554	1
+1	2465	2229.61362705554	0
+1	2545	2290.5404755713	1
+1	2545	2290.5404755713	0
+1	2586	2303.42606963724	1
+1	2586	2303.42606963724	0
+1	2627	2374.97564617136	1
+1	2627	2374.97564617136	0
+1	2682	2407.8856694069	1
+1	2682	2407.8856694069	0
+1	2756	2468.04621375625	1
+1	2756	2468.04621375625	0
+1	2797	2476.7108383667	1
+1	2797	2476.7108383667	0
+1	2838	2569.96153977457	1
+1	2838	2569.96153977457	0
+1	2907	2640.73437651295	1
+1	2907	2640.73437651295	0
+1	2949	2646.30735987814	1
+1	2949	2646.30735987814	0
+1	2988	2649.08550187322	1
+1	2988	2649.08550187322	0
+1	3032	2700.82654249765	1
+1	3032	2700.82654249765	0
+1	3101	2795.15399655842	1
+1	3101	2795.15399655842	0
+1	3142	2812.70452622545	1
+1	3142	2812.70452622545	0
+1	3202	2858.0599118636	1
+1	3202	2858.0599118636	0
+1	3243	2912.10915532061	1
+1	3243	2912.10915532061	0
+1	3312	2987.32765888844	1
+1	3312	2987.32765888844	0
+1	3353	3009.46020941101	1
+1	3353	3009.46020941101	0
+1	3394	3036.8080109476	1
+1	3394	3036.8080109476	0
+1	3435	3070.25131869199	1
+1	3435	3070.25131869199	0
+1	3476	3092.67646897125	1
+1	3476	3092.67646897125	0
+1	3545	3192.79738133027	1
+1	3545	3192.79738133027	0
+1	3583	3194.84736719435	1
+1	3583	3194.84736719435	0
+1	3627	3227.81765760793	1
+1	3627	3227.81765760793	0
+1	3668	3265.37764798143	1
+1	3668	3265.37764798143	0
+1	3709	3276.45406691147	1
+1	3709	3276.45406691147	0
+1	3797	3415.56876548025	1
+1	3797	3415.56876548025	0
+1	3838	3423.84636952089	1
+1	3838	3423.84636952089	0
+1	3879	3451.30037683511	1
+1	3879	3451.30037683511	0
+1	3948	3546.64550485175	1
+1	3948	3546.64550485175	0
+2	202	114.29204147174	1.71213043408
+2	271	182.82115254585	1.71213320454
+2	312	221.54059725831	1.71213037493
+2	386	299.74200417476	1.71213043408
+2	460	377.6803119891	1.71213320454
+2	501	436.8779221504	1.71213057302
+2	583	480.21771421953	1.71213037493
+2	652	506.14226988655	1.71213345873
+2	693	573.76177305718	1.71213070054
+2	762	630.11108482794	1.71213307702
+2	910	803.21591070557	1.71213320454
+2	971	830.36411656519	1.71213037493
+2	1012	907.86655003593	1.71213043408
+2	1100	976.58367295833	1.71213320454
+2	1141	1038.84670620328	1.71213037493
+2	1182	1058.70965583619	1.71213057302
+2	1251	1104.2926285265	1.71213345873
+2	1292	1139.55881373682	1.71213043408
+2	1333	1154.2643139191	1.71213070054
+2	1374	1216.27170139604	1.71213037493
+2	1443	1300.02735510477	1.71213307702
+2	1503	1319.86063075065	1.71213043408
+2	1544	1399.10838640425	1.71213037493
+2	1632	1485.82092875517	1.71213307702
+2	1692	1531.21977334774	1.71213043408
+2	1733	1589.46953234364	1.71213070054
+2	1774	1605.32540784543	1.71213037493
+2	1843	1661.82272636553	1.71213307702
+2	1884	1733.35606291353	1.71213043408
+2	1972	1783.99884503003	1.71213287893
+2	2032	1835.00154443433	1.71213057302
+2	2101	1924.59512085382	1.71213293808
+2	2142	1932.62327537985	1.71213095473
+2	2183	1956.96134909514	1.71213037493
+2	2224	1993.97480885276	1.71213070054
+2	2265	2039.14450421842	1.71213057302
+2	2334	2110.69537954316	1.71213345873
+2	2375	2130.51143356495	1.71213043408
+2	2416	2173.70321359305	1.71213070054
+2	2545	2290.5404755713	1.71213345873
+2	2586	2303.42606963724	1.71213043408
+2	2627	2374.97564617136	1.71213070054
+2	2682	2407.8856694069	1.71213037493
+2	2756	2468.04621375625	1.71213345873
+2	2797	2476.7108383667	1.71213043408
+2	2838	2569.96153977457	1.71213070054
+2	2907	2640.73437651295	1.71213287893
+2	2949	2646.30735987814	1.71213095473
+2	2988	2649.08550187322	1.71213043408
+2	3032	2700.82654249765	1.71213057302
+2	3142	2812.70452622545	1.71213037493
+2	3202	2858.0599118636	1.71213043408
+2	3243	2912.10915532061	1.71213057302
+2	3312	2987.32765888844	1.71213287893
+2	3353	3009.46020941101	1.71213095473
+2	3394	3036.8080109476	1.71213043408
+2	3435	3070.25131869199	1.71213070054
+2	3476	3092.67646897125	1.71213057302
+2	3545	3192.79738133027	1.71213287893
+2	3627	3227.81765760793	1.71213043408
+2	3668	3265.37764798143	1.71213057302
+2	3709	3276.45406691147	1.71213070054
+2	3797	3415.56876548025	1.71213293808
+2	3838	3423.84636952089	1.71213037493
+2	3879	3451.30037683511	1.71213070054
+2	3948	3546.64550485175	1.71213307702
+3	202	114.29204147174	1.71213043408
+3	271	182.82115254585	1.71213320454
+3	312	221.54059725831	1.71213037493
+3	386	299.74200417476	1.71213043408
+3	460	377.6803119891	1.71213320454
+3	501	436.8779221504	1.71213057302
+3	583	480.21771421953	1.71213037493
+3	652	506.14226988655	1.71213345873
+3	693	573.76177305718	1.71213070054
+3	762	630.11108482794	1.71213307702
+3	910	803.21591070557	1.71213320454
+3	971	830.36411656519	1.71213037493
+3	1012	907.86655003593	1.71213043408
+3	1100	976.58367295833	1.71213320454
+3	1141	1038.84670620328	1.71213037493
+3	1182	1058.70965583619	1.71213057302
+3	1251	1104.2926285265	1.71213345873
+3	1292	1139.55881373682	1.71213043408
+3	1333	1154.2643139191	1.71213070054
+3	1374	1216.27170139604	1.71213037493
+3	1443	1300.02735510477	1.71213307702
+3	1503	1319.86063075065	1.71213043408
+3	1544	1399.10838640425	1.71213037493
+3	1632	1485.82092875517	1.71213307702
+3	1692	1531.21977334774	1.71213043408
+3	1733	1589.46953234364	1.71213070054
+3	1774	1605.32540784543	1.71213037493
+3	1843	1661.82272636553	1.71213307702
+3	1884	1733.35606291353	1.71213043408
+3	1972	1783.99884503003	1.71213287893
+3	2032	1835.00154443433	1.71213057302
+3	2101	1924.59512085382	1.71213293808
+3	2142	1932.62327537985	1.71213095473
+3	2183	1956.96134909514	1.71213037493
+3	2224	1993.97480885276	1.71213070054
+3	2265	2039.14450421842	1.71213057302
+3	2334	2110.69537954316	1.71213345873
+3	2375	2130.51143356495	1.71213043408
+3	2416	2173.70321359305	1.71213070054
+3	2545	2290.5404755713	1.71213345873
+3	2586	2303.42606963724	1.71213043408
+3	2627	2374.97564617136	1.71213070054
+3	2682	2407.8856694069	1.71213037493
+3	2756	2468.04621375625	1.71213345873
+3	2797	2476.7108383667	1.71213043408
+3	2838	2569.96153977457	1.71213070054
+3	2907	2640.73437651295	1.71213287893
+3	2949	2646.30735987814	1.71213095473
+3	2988	2649.08550187322	1.71213043408
+3	3032	2700.82654249765	1.71213057302
+3	3142	2812.70452622545	1.71213037493
+3	3202	2858.0599118636	1.71213043408
+3	3243	2912.10915532061	1.71213057302
+3	3312	2987.32765888844	1.71213287893
+3	3353	3009.46020941101	1.71213095473
+3	3394	3036.8080109476	1.71213043408
+3	3435	3070.25131869199	1.71213070054
+3	3476	3092.67646897125	1.71213057302
+3	3545	3192.79738133027	1.71213287893
+3	3627	3227.81765760793	1.71213043408
+3	3668	3265.37764798143	1.71213057302
+3	3709	3276.45406691147	1.71213070054
+3	3797	3415.56876548025	1.71213293808
+3	3838	3423.84636952089	1.71213037493
+3	3879	3451.30037683511	1.71213070054
+3	3948	3546.64550485175	1.71213307702
+4	211	181.10901934131	213.98045898411
+4	400	375.96817878456	344.3808671595
+4	661	572.04964235664	880.83600670981
+4	850	801.50377750103	1502.4152732164
+4	1040	974.87153975379	987.63831652074
+4	1301	1152.55218321856	785.97813816573
+4	1553	1403.48785944972	17.096787119922
+4	1701	1587.7574016431	858.52847909653
+4	1981	1818.16439148323	127.31337814038
+4	2192	1992.26267815222	199.42406008263
+4	2384	2171.99108289251	958.07425070971
+4	2595	2373.26351547082	1211.6206305442
+4	2806	2568.24940907403	1163.383282194
+4	3041	2793.44186335388	40.385396141271
+4	3403	3068.53918799145	380.15478992702
+4	3677	3274.74193621093	110.21300123537
+4	3847	3449.58824613457	2942.4017928953
+5	280	219.82846688338	835.37406341945
+5	548	478.5055838446	77.102173863764
+5	771	650.90428956678	36.98519093461
+5	936	828.65198619026	518.17948620693
+5	1109	1037.13457582835	1454.4609405698
+5	1342	1214.55957102111	1081.3004535576
+5	1512	1397.39625602932	494.10126632466
+5	1742	1603.6132774705	759.54333283179
+5	1912	1782.2867121511	373.42741853991
+5	2151	1955.24921872021	1573.9104523134
+5	2425	2227.90149668061	16.494375406591
+5	2644	2406.17353903197	254.83002619173
+5	2847	2639.02224363402	62.862447552632
+5	3110	2810.99239585052	323.41969879982
+5	3252	2985.61552600951	161.40420137279
+5	3485	3191.08524845134	198.26696207126
+5	3806	3422.13423914596	1128.6798403117
+5	3976	3599.78949726441	1273.5009852128
+6	321	238.93613708406	22.294950413043
+6	469	435.16579157738	210.58635092238
+6	702	628.39895175092	1377.4088486724
+6	919	823.92143087459	280.58095829814
+6	1150	1056.99752526317	889.74450401417
+6	1383	1298.31522202775	716.15650968055
+6	1572	1484.10879567815	805.92211907353
+6	1783	1660.11059328851	627.84776256649
+6	2000	1833.28941386131	193.88983397079
+6	2233	2037.4323736454	591.02048209658
+6	2433	2228.98235551683	510.0523245214
+6	2636	2405.59887669294	112.69479993196
+6	3000	2699.11441192463	181.55102407326
+6	3211	2910.39702474759	197.66924699221
+6	3444	3090.96433839823	1118.8830706846
+6	3636	3263.66551740841	600.70009425297
+6	3888	3544.93337177473	629.91097464171
+7	340	297.99887309813	413.4139092867
+7	592	504.43013642782	50.251720771534
+7	812	706.93713046933	427.89621320059
+7	1017	909.69900114253	298.23539524996
+7	1191	1102.58049506777	274.9057396461
+7	1452	1310.89064230488	414.83240567324
+7	1641	1519.72110640334	85.520978782498
+7	1893	1738.13842682166	61.625717479533
+7	2110	1930.91114442512	404.04171653088
+7	2274	2108.98324608443	151.46884333044
+7	2485	2288.82834211257	824.52757500213
+7	2696	2466.33408029752	271.97605432252
+7	2914	2644.59522892341	791.52607285135
+7	3151	2823.27768031742	641.9813233143
+7	3321	3007.74807845628	204.76922143911
+7	3548	3193.13523623962	1.6181711930322
+7	3718	3380.06476219394	1835.3204162382
+7	3957	3566.45502801025	1007.6812179442
+8	542	475.80918310573	1.71213043408
+8	803	652.61641994171	1.71213037493
+8	2465	2229.61362705554	1.71213037493
+8	3101	2795.15399655842	1.71213320454
+8	3583	3194.84736719435	1.71213095473
+9	542	475.80918310573	1.71213043408
+9	803	652.61641994171	1.71213037493
+9	2465	2229.61362705554	1.71213037493
+9	3101	2795.15399655842	1.71213320454
+9	3583	3194.84736719435	1.71213095473
+

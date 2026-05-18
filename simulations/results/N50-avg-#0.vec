@@ -1,0 +1,2875 @@
+version 3
+run N50-0-20260518-02:26:39-159863
+attr configname N50
+attr datetime 20260518-02:26:39
+attr datetimef 20260518-022639
+attr experiment N50
+attr inifile omnetpp.ini
+attr iterationvars "$0=\"avg\""
+attr iterationvarsd avg
+attr iterationvarsf avg-
+attr measurement "$0=\"avg\""
+attr network test2.LoRaNetworkTest
+attr processid 159863
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config extends General
+config **.numPatients 50
+config network test2.LoRaNetworkTest
+config sim-time-limit 1h
+config warmup-period 60s
+config simtime-resolution -11
+config repeat 30
+config rng-class cMersenneTwister
+config record-eventlog false
+config **.numPatients 20
+config **.HospitalServer.app[0].queueLength:vector.vector-recording true
+config **.HospitalServer.app[0].urgentWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].normalWaitTime:vector.vector-recording true
+config **.HospitalServer.app[0].urgentEndToEndDelay:vector.vector-recording true
+config **.HospitalServer.app[0].normalEndToEndDelay:vector.vector-recording true
+config **.loRaNodes[*].app[0].emergencyVariate:vector.vector-recording true
+config **.vector-recording false
+config **.loRaNodes[0].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[0].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[1].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[1].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[2].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[2].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[3].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[3].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[4].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[4].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[5].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[5].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[6].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[6].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[7].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[7].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[8].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[8].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[9].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[9].**.initialY "250m + uniform(-8m, 8m)"
+config **.loRaNodes[10].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[10].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[11].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[11].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[12].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[12].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[13].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[13].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[14].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[14].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[15].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[15].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[16].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[16].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[17].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[17].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[18].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[18].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[19].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[19].**.initialY "370m + uniform(-8m, 8m)"
+config **.loRaNodes[20].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[20].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[21].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[21].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[22].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[22].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[23].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[23].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[24].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[24].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[25].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[25].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[26].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[26].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[27].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[27].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[28].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[28].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[29].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[29].**.initialY "490m + uniform(-8m, 8m)"
+config **.loRaNodes[30].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[30].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[31].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[31].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[32].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[32].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[33].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[33].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[34].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[34].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[35].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[35].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[36].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[36].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[37].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[37].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[38].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[38].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[39].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[39].**.initialY "610m + uniform(-8m, 8m)"
+config **.loRaNodes[40].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[40].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[41].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[41].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[42].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[42].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[43].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[43].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[44].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[44].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[45].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[45].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[46].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[46].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[47].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[47].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[48].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[48].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[49].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[49].**.initialY "730m + uniform(-8m, 8m)"
+config **.loRaNodes[50].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[50].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[51].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[51].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[52].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[52].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[53].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[53].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[54].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[54].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[55].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[55].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[56].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[56].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[57].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[57].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[58].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[58].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[59].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[59].**.initialY "850m + uniform(-8m, 8m)"
+config **.loRaNodes[60].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[60].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[61].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[61].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[62].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[62].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[63].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[63].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[64].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[64].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[65].**.initialX "1050m + uniform(-10m, 10m)"
+config **.loRaNodes[65].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[66].**.initialX "1200m + uniform(-10m, 10m)"
+config **.loRaNodes[66].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[67].**.initialX "1350m + uniform(-10m, 10m)"
+config **.loRaNodes[67].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[68].**.initialX "1500m + uniform(-10m, 10m)"
+config **.loRaNodes[68].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[69].**.initialX "1650m + uniform(-10m, 10m)"
+config **.loRaNodes[69].**.initialY "970m + uniform(-8m, 8m)"
+config **.loRaNodes[70].**.initialX "300m + uniform(-10m, 10m)"
+config **.loRaNodes[70].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[71].**.initialX "450m + uniform(-10m, 10m)"
+config **.loRaNodes[71].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[72].**.initialX "600m + uniform(-10m, 10m)"
+config **.loRaNodes[72].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[73].**.initialX "750m + uniform(-10m, 10m)"
+config **.loRaNodes[73].**.initialY "1090m + uniform(-8m, 8m)"
+config **.loRaNodes[74].**.initialX "900m + uniform(-10m, 10m)"
+config **.loRaNodes[74].**.initialY "1090m + uniform(-8m, 8m)"
+config **.HospitalServer.numApps 1
+config **.HospitalServer.app[0].typename HospitalServerApp
+config **.HospitalServer.app[0].destPort 2000
+config **.HospitalServer.app[0].localPort 1000
+config **.HospitalServer.app[0].adrMethod "\"avg\""
+config **.HospitalServer.**.evaluateADRinServer true
+config **.HospitalServer.app[0].queueSize 50
+config **.HospitalServer.app[0].expo_rate_lambda 0.83
+config **.loRaGateway.numUdpApps 1
+config **.loRaGateway.packetForwarder.localPort 2000
+config **.loRaGateway.packetForwarder.destPort 1000
+config **.loRaGateway.packetForwarder.destAddresses "\"HospitalServer\""
+config **.loRaGateway.**.initFromDisplayString false
+config **.loRaGateway.**.initialX 544.00m
+config **.loRaGateway.**.initialY 544.00m
+config **.loRaNodes[*].numApps 1
+config **.loRaNodes[*].app[0].typename PatientSensorApp
+config **.loRaNodes[*].app[0].expo_rate_lambda 0.00175
+config **.loRaNodes[*].app[0].emergencyThreshold 50
+config **.loRaNodes[*].**.timeToFirstPacket exponential(24s)
+config **.loRaNodes[*].**.timeToNextPacket exponential(24s)
+config **.loRaNodes[*].**.numberOfPacketsToSend 0
+config **.loRaNodes[*].**initialLoRaSF 12
+config **.loRaNodes[*].**initialLoRaTP 14dBm
+config **.loRaNodes[*].**initialLoRaBW "125 kHz"
+config **.loRaNodes[*].**initialLoRaCR 4
+config **.loRaNodes[*].**.initFromDisplayString false
+config **.loRaNodes[*].**.evaluateADRinNode true
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.typename LoRaEnergyConsumer
+config **.loRaNodes[*].**.energySourceModule "\"^.IdealEpEnergyStorage\""
+config **.loRaNodes[*].LoRaNic.radio.energyConsumer.configFile "xmldoc(\"energyConsumptionParam.xml\")"
+config **.maxTransmissionDuration 4s
+config **.energyDetection -110dBm
+config **.radio.radioMediumModule "\"LoRaMedium\""
+config **.minInterferenceTime 0s
+config **.constraintAreaMinX 0m
+config **.constraintAreaMinY 0m
+config **.constraintAreaMinZ 0m
+config **.constraintAreaMaxZ 0m
+config **.constraintAreaMaxX 3000.0m
+config **.constraintAreaMaxY 3000.0m
+
+vector 0 LoRaNetworkTest.loRaNodes[10].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 1 LoRaNetworkTest.loRaNodes[20].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 2 LoRaNetworkTest.HospitalServer.app[0] queueLength:vector ETV
+attr recordingmode vector
+attr title "Total queue length"
+vector 3 LoRaNetworkTest.HospitalServer.app[0] normalWaitTime:vector ETV
+attr recordingmode vector
+attr title "Normal wait time (s)"
+vector 4 LoRaNetworkTest.HospitalServer.app[0] normalEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Normal end-to-end delay (s)"
+vector 5 LoRaNetworkTest.loRaNodes[22].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 6 LoRaNetworkTest.HospitalServer.app[0] urgentWaitTime:vector ETV
+attr recordingmode vector
+attr title "Urgent wait time (s)"
+vector 7 LoRaNetworkTest.HospitalServer.app[0] urgentEndToEndDelay:vector ETV
+attr recordingmode vector
+attr title "Urgent end-to-end delay (s)"
+vector 8 LoRaNetworkTest.loRaNodes[43].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 9 LoRaNetworkTest.loRaNodes[2].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 10 LoRaNetworkTest.loRaNodes[16].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 11 LoRaNetworkTest.loRaNodes[11].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 12 LoRaNetworkTest.loRaNodes[30].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 13 LoRaNetworkTest.loRaNodes[1].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 14 LoRaNetworkTest.loRaNodes[9].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 15 LoRaNetworkTest.loRaNodes[5].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 16 LoRaNetworkTest.loRaNodes[18].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 17 LoRaNetworkTest.loRaNodes[28].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 18 LoRaNetworkTest.loRaNodes[25].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 19 LoRaNetworkTest.loRaNodes[0].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 20 LoRaNetworkTest.loRaNodes[36].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 21 LoRaNetworkTest.loRaNodes[6].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 22 LoRaNetworkTest.loRaNodes[38].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 23 LoRaNetworkTest.loRaNodes[41].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 24 LoRaNetworkTest.loRaNodes[37].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 25 LoRaNetworkTest.loRaNodes[40].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 26 LoRaNetworkTest.loRaNodes[45].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 27 LoRaNetworkTest.loRaNodes[33].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 28 LoRaNetworkTest.loRaNodes[24].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 29 LoRaNetworkTest.loRaNodes[26].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 30 LoRaNetworkTest.loRaNodes[29].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 31 LoRaNetworkTest.loRaNodes[44].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 32 LoRaNetworkTest.loRaNodes[49].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 33 LoRaNetworkTest.loRaNodes[31].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 34 LoRaNetworkTest.loRaNodes[3].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 35 LoRaNetworkTest.loRaNodes[13].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 36 LoRaNetworkTest.loRaNodes[46].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 37 LoRaNetworkTest.loRaNodes[21].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 38 LoRaNetworkTest.loRaNodes[4].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 39 LoRaNetworkTest.loRaNodes[35].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 40 LoRaNetworkTest.loRaNodes[15].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 41 LoRaNetworkTest.loRaNodes[8].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 42 LoRaNetworkTest.loRaNodes[17].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 43 LoRaNetworkTest.loRaNodes[42].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 44 LoRaNetworkTest.loRaNodes[12].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 45 LoRaNetworkTest.loRaNodes[23].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 46 LoRaNetworkTest.loRaNodes[27].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 47 LoRaNetworkTest.loRaNodes[14].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 48 LoRaNetworkTest.loRaNodes[7].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 49 LoRaNetworkTest.loRaNodes[39].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 50 LoRaNetworkTest.loRaNodes[32].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 51 LoRaNetworkTest.loRaNodes[34].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 52 LoRaNetworkTest.loRaNodes[47].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 53 LoRaNetworkTest.loRaNodes[48].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+vector 54 LoRaNetworkTest.loRaNodes[19].app[0] emergencyVariate:vector ETV
+attr recordingmode vector
+attr title "Exponential variate samples"
+0	5073	60.09388279404	248.3269478146
+0	10107	245.31772152963	1216.6596295672
+0	15496	434.00981868644	76.609678201811
+0	21681	637.53638095363	643.08327113369
+0	28714	885.27368650497	143.41969450128
+0	34207	1060.80442858548	367.0014413518
+0	40002	1246.84722667956	275.16418343514
+0	46531	1458.88606701744	623.93042399179
+0	51937	1639.95416178319	294.17035899826
+0	57408	1819.67793182633	597.52797245543
+0	64438	2033.91887690088	221.62154539796
+0	70003	2217.56054830401	84.165556135344
+0	76016	2416.45538661442	214.51758284015
+0	85046	2707.20562586083	604.9601923023
+0	90847	2897.40072101203	121.66338816281
+0	95854	3071.03212081707	162.23600904408
+0	100534	3242.24995524743	177.03919888886
+0	106577	3425.30792125855	1357.0128034885
+1	5126	60.96730819101	942.18636669015
+1	10662	254.47795481348	209.93497738344
+1	15311	431.00880342183	1261.0695762159
+1	20835	613.96422002721	234.28689876404
+1	26669	802.59211180459	453.80921922035
+1	32684	994.42856188624	1301.988921599
+1	37344	1174.85244891793	1001.7895314833
+1	42806	1362.01131585232	608.73051814948
+1	49254	1560.3764428122	585.01840705112
+1	55612	1764.77663436724	182.17776381819
+1	60886	1941.6436696382	97.779829001836
+1	66785	2125.28588194629	160.48564032696
+1	72713	2307.26439519752	427.89621320059
+1	79451	2520.34245094257	936.46284344122
+1	84758	2703.24521165416	675.49394683136
+1	90367	2891.69152169938	1526.5936620838
+1	95138	3063.66106658014	450.96192225274
+1	101624	3260.76247832943	915.99324855869
+1	108076	3473.01053399377	360.83364583516
+2	5326	62.67943843965	1
+2	5326	62.67943843965	0
+2	5463	65.29427196074	1
+2	5489	65.70791194751	0
+2	5612	80.31556660485	1
+2	5612	80.31556660485	0
+2	5738	95.10981332498	1
+2	5738	95.10981332498	0
+2	6017	181.18086616957	1
+2	6017	181.18086616957	0
+2	6126	184.76778450379	1
+2	6126	184.76778450379	0
+2	6904	205.21425791402	1
+2	6904	205.21425791402	0
+2	7421	211.57197061126	1
+2	7421	211.57197061126	0
+2	7661	213.47414694362	1
+2	7661	213.47414694362	0
+2	7920	216.05487812004	1
+2	7920	216.05487812004	0
+2	8383	219.06685489527	1
+2	8383	219.06685489527	0
+2	8598	221.03094647195	1
+2	8629	221.62214489316	0
+2	8871	226.28701909016	1
+2	8871	226.28701909016	0
+2	9037	228.45760826437	1
+2	9037	228.45760826437	0
+2	9194	230.54591736509	1
+2	9194	230.54591736509	0
+2	9437	235.09596738761	1
+2	9437	235.09596738761	0
+2	9765	239.88495934519	1
+2	9765	239.88495934519	0
+2	9899	242.18877235883	1
+2	9899	242.18877235883	0
+2	10030	244.80522362187	1
+2	10160	245.80418504454	0
+2	10815	256.19008506212	1
+2	10815	256.19008506212	0
+2	10963	259.24762855856	1
+2	10963	259.24762855856	0
+2	11139	264.60031924276	1
+2	11139	264.60031924276	0
+2	11660	286.49579810182	1
+2	11660	286.49579810182	0
+2	11944	374.33188258127	1
+2	11944	374.33188258127	0
+2	12378	384.12869105157	1
+2	12378	384.12869105157	0
+2	12615	389.37163043669	1
+2	12615	389.37163043669	0
+2	12967	396.22478510613	1
+2	12967	396.22478510613	0
+2	13177	400.24427087246	1
+2	13177	400.24427087246	0
+2	13389	403.17956942346	1
+2	13389	403.17956942346	0
+2	13604	406.38513819044	1
+2	13604	406.38513819044	0
+2	13832	409.3635377081	1
+2	13832	409.3635377081	0
+2	14382	417.48591445363	1
+2	14382	417.48591445363	0
+2	14649	420.7398527685	1
+2	14649	420.7398527685	0
+2	14985	425.24411860999	1
+2	14985	425.24411860999	0
+2	15235	428.70570847972	1
+2	15235	428.70570847972	0
+2	15465	432.72093367047	1
+2	15597	435.72194910017	2
+2	15897	443.1088790923	1
+2	15898	443.11390354105	0
+2	16019	444.16878668685	1
+2	16187	446.20408186918	0
+2	16236	446.89911371807	1
+2	16236	446.89911371807	0
+2	16548	453.83630032296	1
+2	16548	453.83630032296	0
+2	16799	459.90313115956	1
+2	16799	459.90313115956	0
+2	16923	463.51594503231	1
+2	16923	463.51594503231	0
+2	17050	477.18450125494	1
+2	17050	477.18450125494	0
+2	17294	490.74964788846	1
+2	17294	490.74964788846	0
+2	17472	496.21962261164	1
+2	17472	496.21962261164	0
+2	18119	564.21582939293	1
+2	18119	564.21582939293	0
+2	18467	570.96639267008	1
+2	18467	570.96639267008	0
+2	18937	584.19203656793	1
+2	18937	584.19203656793	0
+2	19136	587.06142604699	1
+2	19136	587.06142604699	0
+2	19465	591.48241991161	1
+2	19465	591.48241991161	0
+2	19757	595.13565717146	1
+2	19757	595.13565717146	0
+2	19964	600.27834784868	1
+2	19964	600.27834784868	0
+2	20401	603.59597963187	1
+2	20401	603.59597963187	0
+2	20715	612.3217361678	1
+2	20715	612.3217361678	0
+2	21146	615.67635027585	1
+2	21173	615.80137479736	0
+2	21566	632.40379984519	1
+2	21566	632.40379984519	0
+2	21781	639.24851136736	1
+2	21781	639.24851136736	0
+2	22032	642.20471184271	1
+2	22032	642.20471184271	0
+2	22591	652.64355280897	1
+2	22591	652.64355280897	0
+2	22744	654.72781593923	1
+2	22744	654.72781593923	0
+2	22971	665.23650621341	1
+2	22971	665.23650621341	0
+2	23210	675.72402954685	1
+2	23210	675.72402954685	0
+2	23458	697.90562561874	1
+2	23458	697.90562561874	0
+2	23653	741.59920930075	1
+2	23653	741.59920930075	0
+2	23916	744.99855070675	1
+2	23916	744.99855070675	0
+2	24540	763.08794475218	1
+2	24540	763.08794475218	0
+2	24675	769.47806370139	1
+2	24675	769.47806370139	0
+2	25114	776.82990991955	1
+2	25114	776.82990991955	0
+2	25854	786.06751214804	1
+2	25854	786.06751214804	0
+2	26023	787.84691696863	1
+2	26023	787.84691696863	0
+2	26236	793.05669681513	1
+2	26236	793.05669681513	0
+2	26418	796.14463733779	1
+2	26418	796.14463733779	0
+2	26637	800.60237242925	1
+2	26637	800.60237242925	0
+2	26771	804.30424205323	1
+2	26771	804.30424205323	0
+2	27359	816.37372162545	1
+2	27359	816.37372162545	0
+2	27497	820.70932571619	1
+2	27497	820.70932571619	0
+2	27870	825.88461450507	1
+2	27870	825.88461450507	0
+2	28393	852.95398228969	1
+2	28393	852.95398228969	0
+2	28519	877.48708244677	1
+2	28519	877.48708244677	0
+2	28866	886.31551230207	1
+2	28866	886.31551230207	0
+2	29151	895.77082852295	1
+2	29151	895.77082852295	0
+2	29275	904.62203808181	1
+2	29275	904.62203808181	0
+2	29968	948.9616491358	1
+2	29968	948.9616491358	0
+2	30074	953.93003685187	1
+2	30074	953.93003685187	0
+2	30416	959.14571572251	1
+2	30416	959.14571572251	0
+2	30770	963.34141696259	1
+2	30770	963.34141696259	0
+2	31016	967.00253591524	1
+2	31016	967.00253591524	0
+2	31477	971.26555401992	1
+2	31477	971.26555401992	0
+2	31620	975.2684854737	1
+2	31620	975.2684854737	0
+2	31841	979.12453994855	1
+2	31841	979.12453994855	0
+2	31996	980.91368654888	1
+2	31996	980.91368654888	0
+2	32276	987.91992845555	1
+2	32276	987.91992845555	0
+2	33111	998.78389113498	1
+2	33111	998.78389113498	0
+2	33958	1033.96277427058	1
+2	33958	1033.96277427058	0
+2	34198	1051.66998334206	1
+2	34198	1051.66998334206	0
+2	34304	1062.51655899921	1
+2	34304	1062.51655899921	0
+2	34441	1073.0944893551	1
+2	34441	1073.0944893551	0
+2	34573	1077.13923884202	1
+2	34573	1077.13923884202	0
+2	34810	1080.14690508961	1
+2	34810	1080.14690508961	0
+2	34952	1086.63482403897	1
+2	34952	1086.63482403897	0
+2	35720	1136.46992318968	1
+2	35720	1136.46992318968	0
+2	35908	1139.05532772869	1
+2	35908	1139.05532772869	0
+2	36577	1155.53780262847	1
+2	36577	1155.53780262847	0
+2	36802	1161.80148528838	1
+2	36802	1161.80148528838	0
+2	37255	1171.77673974409	1
+2	37255	1171.77673974409	0
+2	37827	1178.50825447338	1
+2	37827	1178.50825447338	0
+2	37982	1181.90518298042	1
+2	37982	1181.90518298042	0
+2	38191	1184.49600715244	1
+2	38191	1184.49600715244	0
+2	38571	1195.36749273994	1
+2	38571	1195.36749273994	0
+2	38918	1201.44128435243	1
+2	38918	1201.44128435243	0
+2	39030	1204.67994201028	1
+2	39030	1204.67994201028	0
+2	39291	1206.76869116965	1
+2	39291	1206.76869116965	0
+2	39539	1211.85575980614	1
+2	39539	1211.85575980614	0
+2	39769	1239.08990701139	1
+2	39769	1239.08990701139	0
+2	40104	1248.55935709329	1
+2	40104	1248.55935709329	0
+2	40243	1258.65354768939	1
+2	40243	1258.65354768939	0
+2	40373	1260.46576290293	1
+2	40373	1260.46576290293	0
+2	40612	1267.61234996023	1
+2	40612	1267.61234996023	0
+2	40955	1275.8895690467	1
+2	40955	1275.8895690467	0
+2	41135	1297.35216996474	1
+2	41135	1297.35216996474	0
+2	41460	1310.01321427848	1
+2	41460	1310.01321427848	0
+2	41711	1315.76491845096	1
+2	41711	1315.76491845096	0
+2	42026	1330.6928008886	1
+2	42026	1330.6928008886	0
+2	42300	1346.87802815203	1
+2	42300	1346.87802815203	0
+2	42430	1350.35512491963	1
+2	42430	1350.35512491963	0
+2	42682	1358.08731013512	1
+2	42682	1358.08731013512	0
+2	42906	1363.72344610096	1
+2	42906	1363.72344610096	0
+2	43170	1373.38318267398	1
+2	43170	1373.38318267398	0
+2	43413	1379.52746541561	1
+2	43413	1379.52746541561	0
+2	43573	1383.07127429802	1
+2	43573	1383.07127429802	0
+2	43779	1385.10144750827	1
+2	43779	1385.10144750827	0
+2	43997	1388.53393635901	1
+2	43997	1388.53393635901	0
+2	44287	1391.03215835849	1
+2	44287	1391.03215835849	0
+2	44506	1394.90123620943	1
+2	44506	1394.90123620943	0
+2	44774	1398.12319305804	1
+2	44776	1398.14870551179	0
+2	44890	1402.45720563779	1
+2	44890	1402.45720563779	0
+2	45148	1409.66477274001	1
+2	45148	1409.66477274001	0
+2	45272	1413.82582032664	1
+2	45272	1413.82582032664	0
+2	45454	1416.97418016742	1
+2	45454	1416.97418016742	0
+2	45647	1419.48029365067	1
+2	45651	1420.2832865974	0
+2	45775	1437.87205933206	1
+2	45775	1437.87205933206	0
+2	46106	1440.83072730684	1
+2	46106	1440.83072730684	0
+2	46236	1442.66548477099	1
+2	46236	1442.66548477099	0
+2	46379	1447.42470960719	1
+2	46379	1447.42470960719	0
+2	46503	1458.81145630103	1
+2	46503	1458.81145630103	0
+2	46630	1460.59819743117	1
+2	46658	1461.29788549917	0
+2	46789	1464.52183661116	1
+2	46789	1464.52183661116	0
+2	46921	1474.90751248149	1
+2	46921	1474.90751248149	0
+2	47360	1502.10555012457	1
+2	47360	1502.10555012457	0
+2	47649	1513.60131951095	1
+2	47649	1513.60131951095	0
+2	47998	1521.25864180097	1
+2	47998	1521.25864180097	0
+2	48129	1533.52156797435	1
+2	48129	1533.52156797435	0
+2	48234	1535.25459772636	1
+2	48234	1535.25459772636	0
+2	48391	1541.25024937772	1
+2	48391	1541.25024937772	0
+2	48657	1546.2865008413	1
+2	48657	1546.2865008413	0
+2	49225	1560.06011998194	1
+2	49225	1560.06011998194	0
+2	49508	1562.08857306084	1
+2	49508	1562.08857306084	0
+2	49658	1567.01559150649	1
+2	49658	1567.01559150649	0
+2	49784	1568.75833699878	1
+2	49784	1568.75833699878	0
+2	49976	1574.55811146667	1
+2	49976	1574.55811146667	0
+2	50828	1604.82554295851	1
+2	50828	1604.82554295851	0
+2	51023	1611.31577720807	1
+2	51023	1611.31577720807	0
+2	51249	1617.27447437542	1
+2	51249	1617.27447437542	0
+2	51582	1619.38887589926	1
+2	51582	1619.38887589926	0
+2	51789	1633.5125240702	1
+2	51789	1633.5125240702	0
+2	51920	1638.19922766306	1
+2	51920	1638.19922766306	0
+2	52090	1641.66629470092	1
+2	52090	1641.66629470092	0
+2	52410	1650.94446735011	1
+2	52410	1650.94446735011	0
+2	53010	1677.00336352283	1
+2	53010	1677.00336352283	0
+2	53170	1684.78015255953	1
+2	53170	1684.78015255953	0
+2	53578	1699.12995443208	1
+2	53578	1699.12995443208	0
+2	53722	1703.74087694634	1
+2	53722	1703.74087694634	0
+2	53949	1713.71688145841	1
+2	53949	1713.71688145841	0
+2	54238	1721.5533070672	1
+2	54238	1721.5533070672	0
+2	54773	1740.29206478488	1
+2	54773	1740.29206478488	0
+2	54879	1743.03459330286	1
+2	54879	1743.03459330286	0
+2	55038	1748.63994770624	1
+2	55038	1748.63994770624	0
+2	55251	1753.8472268026	1
+2	55251	1753.8472268026	0
+2	55919	1766.48876711988	1
+2	55919	1766.48876711988	0
+2	56116	1772.4746690539	1
+2	56116	1772.4746690539	0
+2	56274	1781.63542746887	1
+2	56274	1781.63542746887	0
+2	56579	1792.31027696691	1
+2	56579	1792.31027696691	0
+2	57077	1798.6197892156	1
+2	57077	1798.6197892156	0
+2	57279	1813.98092773839	1
+2	57279	1813.98092773839	0
+2	57560	1821.39006224006	1
+2	57560	1821.39006224006	0
+2	57978	1833.24001105472	1
+2	57978	1833.24001105472	0
+2	58175	1839.31880397707	1
+2	58175	1839.31880397707	0
+2	58348	1842.53069630579	1
+2	58348	1842.53069630579	0
+2	58483	1845.25338202067	1
+2	58483	1845.25338202067	0
+2	58818	1860.05040419789	1
+2	58818	1860.05040419789	0
+2	59192	1875.06872465506	1
+2	59192	1875.06872465506	0
+2	59319	1885.46674749727	1
+2	59319	1885.46674749727	0
+2	59595	1891.94717352407	1
+2	59595	1891.94717352407	0
+2	59811	1903.15831316399	1
+2	59811	1903.15831316399	0
+2	60046	1907.36545813719	1
+2	60046	1907.36545813719	0
+2	60314	1930.08771980293	1
+2	60314	1930.08771980293	0
+2	60626	1932.01269194507	1
+2	60626	1932.01269194507	0
+2	60985	1943.35579988684	1
+2	60985	1943.35579988684	0
+2	61142	1945.88637286571	1
+2	61142	1945.88637286571	0
+2	61252	1948.19790050868	1
+2	61252	1948.19790050868	0
+2	61617	1958.56141036652	1
+2	61617	1958.56141036652	0
+2	61780	1961.36794179426	1
+2	61780	1961.36794179426	0
+2	61997	1969.94789857139	1
+2	61997	1969.94789857139	0
+2	62237	1974.94011069994	1
+2	62237	1974.94011069994	0
+2	62464	1978.5865112961	1
+2	62464	1978.5865112961	0
+2	62698	1986.91132457409	1
+2	62698	1986.91132457409	0
+2	62943	1996.64504008696	1
+2	62943	1996.64504008696	0
+2	63435	2003.40982649974	1
+2	63435	2003.40982649974	0
+2	63652	2008.64935430833	1
+2	63652	2008.64935430833	0
+2	63928	2017.20431269699	1
+2	63928	2017.20431269699	0
+2	64048	2022.24510637879	1
+2	64048	2022.24510637879	0
+2	64183	2026.28119159509	1
+2	64183	2026.28119159509	0
+2	64379	2031.86014038982	1
+2	64379	2031.86014038982	0
+2	64538	2035.63100731461	1
+2	64538	2035.63100731461	0
+2	64672	2042.05505459992	1
+2	64672	2042.05505459992	0
+2	64826	2045.04935239698	1
+2	64826	2045.04935239698	0
+2	64959	2050.43068437269	1
+2	64959	2050.43068437269	0
+2	65365	2064.78199904133	1
+2	65365	2064.78199904133	0
+2	65544	2070.46087455149	1
+2	65544	2070.46087455149	0
+2	65662	2077.17349675804	1
+2	65662	2077.17349675804	0
+2	65845	2080.23332228454	1
+2	65845	2080.23332228454	0
+2	66135	2094.50004895593	1
+2	66135	2094.50004895593	0
+2	66347	2103.33358476832	1
+2	66347	2103.33358476832	0
+2	66635	2107.14680828927	1
+2	66635	2107.14680828927	0
+2	66750	2112.75653706346	1
+2	66750	2112.75653706346	0
+2	66935	2126.99801219493	1
+2	66935	2126.99801219493	0
+2	67122	2130.1648307481	1
+2	67122	2130.1648307481	0
+2	67307	2138.01900304998	1
+2	67307	2138.01900304998	0
+2	67411	2141.01623444829	1
+2	67411	2141.01623444829	0
+2	67781	2149.80668060131	1
+2	67781	2149.80668060131	0
+2	67918	2155.69234307401	1
+2	67918	2155.69234307401	0
+2	68046	2158.26186658126	1
+2	68049	2158.7747612025	0
+2	68181	2170.74070104399	1
+2	68181	2170.74070104399	0
+2	68361	2172.71477345408	1
+2	68361	2172.71477345408	0
+2	68575	2174.63095284554	1
+2	68596	2174.71402441588	0
+2	69219	2193.36167705582	1
+2	69219	2193.36167705582	0
+2	69399	2195.83838067617	1
+2	69399	2195.83838067617	0
+2	69583	2198.23916388271	1
+2	69583	2198.23916388271	0
+2	69918	2216.51141965202	1
+2	69918	2216.51141965202	0
+2	70283	2230.32169464862	1
+2	70283	2230.32169464862	0
+2	70511	2237.74143944284	1
+2	70511	2237.74143944284	0
+2	70980	2244.18202209199	1
+2	70980	2244.18202209199	0
+2	71321	2259.95902149651	1
+2	71321	2259.95902149651	0
+2	71702	2265.27485510813	1
+2	71702	2265.27485510813	0
+2	71838	2269.72736328136	1
+2	71838	2269.72736328136	0
+2	72072	2273.64152014606	1
+2	72072	2273.64152014606	0
+2	72229	2285.84778662759	1
+2	72229	2285.84778662759	0
+2	72494	2297.0587638753	1
+2	72494	2297.0587638753	0
+2	72688	2306.34888679548	1
+2	72688	2306.34888679548	0
+2	72813	2308.97652544616	1
+2	72813	2308.97652544616	0
+2	73081	2318.59081602776	1
+2	73081	2318.59081602776	0
+2	73290	2322.24064158482	1
+2	73290	2322.24064158482	0
+2	73451	2332.05291486696	1
+2	73451	2332.05291486696	0
+2	73789	2343.38422763305	1
+2	73789	2343.38422763305	0
+2	73983	2347.23654346722	1
+2	73983	2347.23654346722	0
+2	74384	2355.03776204463	1
+2	74384	2355.03776204463	0
+2	74631	2367.7275856591	1
+2	74631	2367.7275856591	0
+2	74856	2375.81178636955	1
+2	74856	2375.81178636955	0
+2	75139	2382.99694960207	1
+2	75139	2382.99694960207	0
+2	75268	2386.59447114608	1
+2	75268	2386.59447114608	0
+2	75435	2394.05257265725	1
+2	75435	2394.05257265725	0
+2	75641	2405.29968986961	1
+2	75641	2405.29968986961	0
+2	75772	2410.07711558406	1
+2	75772	2410.07711558406	0
+2	75980	2413.93945115423	1
+2	75980	2413.93945115423	0
+2	76171	2418.16751702815	1
+2	76171	2418.16751702815	0
+2	76478	2426.89016820737	1
+2	76478	2426.89016820737	0
+2	76604	2429.85497126673	1
+2	76604	2429.85497126673	0
+2	76835	2432.92695202853	1
+2	76835	2432.92695202853	0
+2	76986	2434.62219694517	1
+2	76986	2434.62219694517	0
+2	77229	2445.10157333619	1
+2	77229	2445.10157333619	0
+2	77347	2451.07750404446	1
+2	77347	2451.07750404446	0
+2	77477	2465.71071496156	1
+2	77477	2465.71071496156	0
+2	77628	2469.67026923695	1
+2	77628	2469.67026923695	0
+2	77953	2480.18528285863	1
+2	77953	2480.18528285863	0
+2	78149	2482.3810489408	1
+2	78149	2482.3810489408	0
+2	78329	2494.8859138885	1
+2	78329	2494.8859138885	0
+2	78616	2500.67918509484	1
+2	78616	2500.67918509484	0
+2	78961	2505.41344597243	1
+2	78961	2505.41344597243	0
+2	79124	2507.54945673038	1
+2	79124	2507.54945673038	0
+2	79337	2512.7969569956	1
+2	79337	2512.7969569956	0
+2	79550	2522.05458119121	1
+2	79550	2522.05458119121	0
+2	79762	2530.96777116925	1
+2	79762	2530.96777116925	0
+2	80374	2563.2647841222	1
+2	80374	2563.2647841222	0
+2	80553	2566.72923864621	1
+2	80553	2566.72923864621	0
+2	80801	2568.67790408373	1
+2	80801	2568.67790408373	0
+2	81095	2579.45866133547	1
+2	81095	2579.45866133547	0
+2	81274	2584.05254719319	1
+2	81274	2584.05254719319	0
+2	81581	2591.02933048977	1
+2	81581	2591.02933048977	0
+2	81803	2595.72449169298	1
+2	81803	2595.72449169298	0
+2	81931	2607.39907245048	1
+2	81931	2607.39907245048	0
+2	82070	2616.61010930094	1
+2	82070	2616.61010930094	0
+2	82406	2626.42663456987	1
+2	82406	2626.42663456987	0
+2	82635	2630.92655707988	1
+2	82635	2630.92655707988	0
+2	82919	2646.02475099701	1
+2	82919	2646.02475099701	0
+2	83051	2648.67403965329	1
+2	83051	2648.67403965329	0
+2	83398	2671.77905182289	1
+2	83398	2671.77905182289	0
+2	83533	2678.65773702935	1
+2	83533	2678.65773702935	0
+2	84095	2686.77262843929	1
+2	84095	2686.77262843929	0
+2	84282	2689.86412403138	1
+2	84282	2689.86412403138	0
+2	84960	2704.9573419028	1
+2	84960	2704.9573419028	0
+2	85200	2708.91775627456	1
+2	85200	2708.91775627456	0
+2	86015	2745.67429132712	1
+2	86015	2745.67429132712	0
+2	86285	2753.78088618565	1
+2	86285	2753.78088618565	0
+2	87093	2780.37424200637	1
+2	87093	2780.37424200637	0
+2	87339	2787.70860367781	1
+2	87339	2787.70860367781	0
+2	87474	2790.09666451065	1
+2	87500	2791.84415277251	0
+2	87830	2803.65083380205	1
+2	87830	2803.65083380205	0
+2	88085	2819.97708399035	1
+2	88085	2819.97708399035	0
+2	88409	2842.5826675056	1
+2	88409	2842.5826675056	0
+2	88644	2845.78362989367	1
+2	88644	2845.78362989367	0
+2	88847	2849.30269887754	1
+2	88847	2849.30269887754	0
+2	89048	2856.34125540551	1
+2	89048	2856.34125540551	0
+2	89533	2877.60609457855	1
+2	89533	2877.60609457855	0
+2	89663	2879.32650325167	1
+2	89663	2879.32650325167	0
+2	89770	2881.89182487593	1
+2	89770	2881.89182487593	0
+2	90068	2887.40233335991	1
+2	90068	2887.40233335991	0
+2	90572	2893.40365194802	1
+2	90572	2893.40365194802	0
+2	90766	2896.44705832243	1
+2	90766	2896.44705832243	0
+2	91179	2900.02407486076	1
+2	91179	2900.02407486076	0
+2	91334	2904.28154004445	1
+2	91334	2904.28154004445	0
+2	91571	2924.46866770178	1
+2	91571	2924.46866770178	0
+2	91810	2927.22067835428	1
+2	91810	2927.22067835428	0
+2	91923	2929.89577634603	1
+2	91923	2929.89577634603	0
+2	92352	2947.701787302	1
+2	92352	2947.701787302	0
+2	92577	2951.52988958516	1
+2	92577	2951.52988958516	0
+2	92865	2955.76747346198	1
+2	92865	2955.76747346198	0
+2	93000	2965.00077714041	1
+2	93000	2965.00077714041	0
+2	93238	2967.48334691602	1
+2	93238	2967.48334691602	0
+2	93526	2978.45059115776	1
+2	93526	2978.45059115776	0
+2	93739	2983.26720704008	1
+2	93739	2983.26720704008	0
+2	94007	2998.24084618749	1
+2	94007	2998.24084618749	0
+2	94555	3026.64758674296	1
+2	94555	3026.64758674296	0
+2	94708	3034.90113853369	1
+2	94708	3034.90113853369	0
+2	94813	3039.57610368156	1
+2	94813	3039.57610368156	0
+2	94970	3050.83847464242	1
+2	94970	3050.83847464242	0
+2	95292	3064.16471172756	1
+2	95292	3064.16471172756	0
+2	95661	3068.61998814437	1
+2	95661	3068.61998814437	0
+2	95830	3070.75783217803	1
+2	95830	3070.75783217803	0
+2	96063	3072.7442512308	1
+2	96063	3072.7442512308	0
+2	96648	3083.03594846072	1
+2	96648	3083.03594846072	0
+2	96934	3091.99385608016	1
+2	96934	3091.99385608016	0
+2	97276	3099.35264670011	1
+2	97276	3099.35264670011	0
+2	97545	3103.70838877067	1
+2	97545	3103.70838877067	0
+2	97711	3107.3686372962	1
+2	97711	3107.3686372962	0
+2	98168	3120.24274661354	1
+2	98168	3120.24274661354	0
+2	98397	3124.625782852	1
+2	98397	3124.625782852	0
+2	98736	3138.64770267932	1
+2	98736	3138.64770267932	0
+2	98985	3152.21987864019	1
+2	98985	3152.21987864019	0
+2	99429	3169.56394213799	1
+2	99429	3169.56394213799	0
+2	99686	3181.03412009485	1
+2	99686	3181.03412009485	0
+2	100138	3207.18304893257	1
+2	100138	3207.18304893257	0
+2	100481	3241.53207268709	1
+2	100481	3241.53207268709	0
+2	100637	3243.96208566116	1
+2	100637	3243.96208566116	0
+2	100769	3245.75315741671	1
+2	100769	3245.75315741671	0
+2	101116	3254.44997484903	1
+2	101116	3254.44997484903	0
+2	101264	3256.6599721217	1
+2	101277	3256.96434274045	0
+2	101594	3259.2288624906	1
+2	101680	3261.26443669857	0
+2	101730	3262.47460857807	1
+2	101730	3262.47460857807	0
+2	102000	3268.3186194902	1
+2	102000	3268.3186194902	0
+2	102132	3276.23007570139	1
+2	102132	3276.23007570139	0
+2	102462	3295.03773233705	1
+2	102462	3295.03773233705	0
+2	102689	3297.35459226669	1
+2	102689	3297.35459226669	0
+2	102956	3300.93931096477	1
+2	102956	3300.93931096477	0
+2	103096	3302.99411789132	1
+2	103096	3302.99411789132	0
+2	103530	3312.32104091852	1
+2	103530	3312.32104091852	0
+2	103725	3314.20257350655	1
+2	103739	3314.38106483676	0
+2	104170	3320.45214579162	1
+2	104170	3320.45214579162	0
+2	104532	3335.44162733214	1
+2	104532	3335.44162733214	0
+2	104940	3348.5916650855	1
+2	104940	3348.5916650855	0
+2	105059	3352.00662405215	1
+2	105059	3352.00662405215	0
+2	105216	3358.39893275196	1
+2	105216	3358.39893275196	0
+2	105591	3371.61267495903	1
+2	105591	3371.61267495903	0
+2	105751	3386.43479511315	1
+2	105751	3386.43479511315	0
+2	106070	3407.58797416627	1
+2	106070	3407.58797416627	0
+2	106183	3412.97827500122	1
+2	106183	3412.97827500122	0
+2	106416	3420.28144430017	1
+2	106416	3420.28144430017	0
+2	106574	3424.34619221395	1
+2	106576	3425.08561423099	0
+2	107012	3443.12736314789	1
+2	107012	3443.12736314789	0
+2	107417	3460.59671774694	1
+2	107417	3460.59671774694	0
+2	107652	3469.00033878084	1
+2	107652	3469.00033878084	0
+2	108046	3472.70429795267	1
+2	108046	3472.70429795267	0
+2	108183	3474.72266424241	1
+2	108183	3474.72266424241	0
+2	108430	3476.98296830223	1
+2	108430	3476.98296830223	0
+2	108579	3478.85907133747	1
+2	108714	3482.0058298834	2
+2	108718	3482.12136729171	1
+2	108719	3482.28603094309	0
+2	109148	3493.52828001291	1
+2	109148	3493.52828001291	0
+2	109410	3496.12332909026	1
+2	109556	3499.02264420434	0
+2	109738	3501.11025576446	1
+2	109738	3501.11025576446	0
+2	110255	3516.20935989444	1
+2	110255	3516.20935989444	0
+2	110490	3529.64432169266	1
+2	110490	3529.64432169266	0
+2	110725	3534.98071613787	1
+2	110725	3534.98071613787	0
+2	111133	3540.12418448919	1
+2	111133	3540.12418448919	0
+2	111329	3551.48313767448	1
+2	111329	3551.48313767448	0
+2	111461	3564.26448178063	1
+2	111461	3564.26448178063	0
+2	111580	3570.91875862561	1
+2	111580	3570.91875862561	0
+2	111698	3576.06392302596	1
+2	111698	3576.06392302596	0
+2	112174	3594.99774400708	1
+2	112174	3594.99774400708	0
+3	5326	62.67943843965	1.71213024864
+3	5612	80.31556660485	1.7121303397
+3	5738	95.10981332498	1.71213037669
+3	6017	181.18086616957	1.71213254844
+3	6904	205.21425791402	1.71213066453
+3	7421	211.57197061126	1.71213009349
+3	7661	213.47414694362	1.71213043246
+3	7920	216.05487812004	1.71213010761
+3	8383	219.06685489527	1.71213074316
+3	8629	221.62214489316	2.30332819731
+3	8871	226.28701909016	1.71213029854
+3	9037	228.45760826437	1.71212974521
+3	9194	230.54591736509	1.71213093979
+3	9437	235.09596738761	1.71213112593
+3	9765	239.88495934519	1.71213005178
+3	9899	242.18877235883	1.71213002979
+3	10160	245.80418504454	2.71109109518
+3	10815	256.19008506212	1.71213024864
+3	10963	259.24762855856	1.7121303397
+3	11139	264.60031924276	1.71212968144
+3	11660	286.49579810182	1.71213037669
+3	11944	374.33188258127	1.71213291757
+3	12378	384.12869105157	1.71213004444
+3	12615	389.37163043669	1.71213022369
+3	12967	396.22478510613	1.71213009349
+3	13177	400.24427087246	1.71213060676
+3	13389	403.17956942346	1.7121297761
+3	13604	406.38513819044	1.71213131006
+3	13832	409.3635377081	1.71213029854
+3	14382	417.48591445363	1.71212974521
+3	14985	425.24411860999	1.71212967251
+3	15235	428.70570847972	1.71213009342
+3	15897	443.1088790923	12.10007567047
+3	15898	443.11390354105	9.10408485461
+3	16187	446.20408186918	3.74742591115
+3	16236	446.89911371807	1.71213043246
+3	16548	453.83630032296	1.71213005178
+3	16799	459.90313115956	1.71213059186
+3	16923	463.51594503231	1.71213037669
+3	17050	477.18450125494	1.71212968144
+3	17294	490.74964788846	1.71213002979
+3	17472	496.21962261164	1.7121328437
+3	18119	564.21582939293	1.71213022369
+3	18467	570.96639267008	1.71213066453
+3	18937	584.19203656793	1.71213029854
+3	19465	591.48241991161	1.71213004444
+3	19757	595.13565717146	1.71212974521
+3	19964	600.27834784868	1.71213010761
+3	20401	603.59597963187	1.71212967251
+3	20715	612.3217361678	1.71213009342
+3	21173	615.80137479736	1.83715477015
+3	21566	632.40379984519	1.71213293646
+3	21781	639.24851136736	1.71213041373
+3	22032	642.20471184271	1.71213059186
+3	22591	652.64355280897	1.71212968144
+3	22744	654.72781593923	1.71213267149
+3	22971	665.23650621341	1.71213002979
+3	23210	675.72402954685	1.71213037669
+3	23458	697.90562561874	1.7121303397
+3	23653	741.59920930075	1.71213120822
+3	23916	744.99855070675	1.71213009349
+3	24540	763.08794475218	1.71213254844
+3	24675	769.47806370139	1.71213212713
+3	25114	776.82990991955	1.71213010761
+3	25854	786.06751214804	1.71213009342
+3	26023	787.84691696863	1.71213041357
+3	26236	793.05669681513	1.71213074316
+3	26418	796.14463733779	1.71213060103
+3	26637	800.60237242925	1.71212974521
+3	26771	804.30424205323	1.71213024864
+3	27359	816.37372162545	1.71213060676
+3	27497	820.70932571619	1.71213108353
+3	27870	825.88461450507	1.71212968144
+3	28393	852.95398228969	1.71213037669
+3	28519	877.48708244677	1.71213043246
+3	28866	886.31551230207	1.71213255578
+3	29151	895.77082852295	1.7121303397
+3	29275	904.62203808181	1.71213002979
+3	29968	948.9616491358	1.71213093979
+3	30074	953.93003685187	1.7121297761
+3	30770	963.34141696259	1.71213004444
+3	31016	967.00253591524	1.71212967251
+3	31477	971.26555401992	1.71213009342
+3	31620	975.2684854737	1.71213010761
+3	31841	979.12453994855	1.71212974521
+3	31996	980.91368654888	1.71213074316
+3	32276	987.91992845555	1.71213066453
+3	33111	998.78389113498	1.71212968144
+3	34198	1051.66998334206	1.71213108353
+3	34304	1062.51655899921	1.71213041373
+3	34441	1073.0944893551	1.71213005178
+3	34573	1077.13923884202	1.71213002979
+3	34810	1080.14690508961	1.71213037669
+3	35720	1136.46992318968	1.71213009349
+3	35908	1139.05532772869	1.71212967251
+3	36577	1155.53780262847	1.71213259742
+3	36802	1161.80148528838	1.71213066453
+3	37255	1171.77673974409	1.71212968144
+3	37827	1178.50825447338	1.71213029854
+3	37982	1181.90518298042	1.71213072882
+3	38191	1184.49600715244	1.7121297761
+3	38571	1195.36749273994	1.71213209831
+3	38918	1201.44128435243	1.71213060103
+3	39030	1204.67994201028	1.71212974521
+3	39291	1206.76869116965	1.71213060676
+3	39539	1211.85575980614	1.71213112593
+3	39769	1239.08990701139	1.71213010761
+3	40104	1248.55935709329	1.71213041373
+3	40243	1258.65354768939	1.71213005178
+3	40373	1260.46576290293	1.71213037669
+3	40612	1267.61234996023	1.71213002979
+3	40955	1275.8895690467	1.71213293646
+3	41135	1297.35216996474	1.71213059186
+3	41460	1310.01321427848	1.71213009349
+3	41711	1315.76491845096	1.71212967251
+3	42026	1330.6928008886	1.71213160389
+3	42300	1346.87802815203	1.71212968144
+3	42430	1350.35512491963	1.71213066453
+3	42906	1363.72344610096	1.71213024864
+3	43170	1373.38318267398	1.71213260439
+3	43413	1379.52746541561	1.71213074316
+3	43573	1383.07127429802	1.71213022369
+3	43779	1385.10144750827	1.71213060103
+3	43997	1388.53393635901	1.7121297761
+3	44287	1391.03215835849	1.71212974521
+3	44506	1394.90123620943	1.71213072882
+3	44776	1398.14870551179	1.73764658997
+3	44890	1402.45720563779	1.71213004444
+3	45148	1409.66477274001	1.71213112593
+3	45272	1413.82582032664	1.71213029854
+3	45454	1416.97418016742	1.71213010761
+3	45651	1420.2832865974	2.51512552246
+3	45775	1437.87205933206	1.7121303397
+3	46106	1440.83072730684	1.71213037669
+3	46236	1442.66548477099	1.71213041357
+3	46379	1447.42470960719	1.71213005178
+3	46503	1458.81145630103	1.71213043246
+3	46658	1461.29788549917	2.41181848173
+3	46789	1464.52183661116	1.71213227685
+3	46921	1474.90751248149	1.71213093979
+3	47360	1502.10555012457	1.71213002979
+3	47649	1513.60131951095	1.71212967251
+3	48129	1533.52156797435	1.71213266403
+3	48234	1535.25459772636	1.71212968144
+3	48391	1541.25024937772	1.71213165161
+3	49225	1560.06011998194	1.71213022369
+3	49508	1562.08857306084	1.71213024864
+3	49658	1567.01559150649	1.71212974521
+3	49784	1568.75833699878	1.7121297761
+3	49976	1574.55811146667	1.71213004444
+3	50828	1604.82554295851	1.71213029854
+3	51023	1611.31577720807	1.71213060103
+3	51249	1617.27447437542	1.71213037669
+3	51582	1619.38887589926	1.71213005178
+3	51789	1633.5125240702	1.71213009342
+3	51920	1638.19922766306	1.71213010761
+3	52090	1641.66629470092	1.71213291773
+3	52410	1650.94446735011	1.71213043246
+3	53010	1677.00336352283	1.71213120822
+3	53170	1684.78015255953	1.71213009349
+3	53578	1699.12995443208	1.71213041357
+3	53949	1713.71688145841	1.71212967251
+3	54773	1740.29206478488	1.71213074316
+3	54879	1743.03459330286	1.71213022369
+3	55038	1748.63994770624	1.71213072882
+3	55251	1753.8472268026	1.71212974521
+3	55919	1766.48876711988	1.71213275264
+3	56116	1772.4746690539	1.71213163222
+3	56274	1781.63542746887	1.7121297761
+3	56579	1792.31027696691	1.71213002979
+3	57077	1798.6197892156	1.71213005178
+3	57279	1813.98092773839	1.71213037669
+3	57560	1821.39006224006	1.71213041373
+3	57978	1833.24001105472	1.7121303397
+3	58175	1839.31880397707	1.71213060676
+3	58348	1842.53069630579	1.71213009342
+3	58483	1845.25338202067	1.71213010761
+3	58818	1860.05040419789	1.71213043246
+3	59192	1875.06872465506	1.71213212713
+3	59319	1885.46674749727	1.71213059186
+3	59595	1891.94717352407	1.71213217651
+3	60046	1907.36545813719	1.71213009349
+3	60314	1930.08771980293	1.71213074316
+3	60626	1932.01269194507	1.71213022369
+3	60985	1943.35579988684	1.71213024864
+3	61142	1945.88637286571	1.71213117732
+3	61617	1958.56141036652	1.71213072882
+3	61780	1961.36794179426	1.71212974521
+3	61997	1969.94789857139	1.71213060103
+3	62237	1974.94011069994	1.71213160389
+3	62464	1978.5865112961	1.71213029854
+3	62698	1986.91132457409	1.71212968144
+3	62943	1996.64504008696	1.71213005178
+3	63435	2003.40982649974	1.7121297761
+3	63652	2008.64935430833	1.7121303397
+3	63928	2017.20431269699	1.71213259742
+3	64048	2022.24510637879	1.71213037669
+3	64183	2026.28119159509	1.71213010761
+3	64379	2031.86014038982	1.7121321794
+3	64538	2035.63100731461	1.71213041373
+3	64672	2042.05505459992	1.71213043246
+3	64826	2045.04935239698	1.71213131006
+3	65365	2064.78199904133	1.71213157664
+3	65544	2070.46087455149	1.71213059186
+3	65662	2077.17349675804	1.71212967251
+3	66135	2094.50004895593	1.71213009349
+3	66347	2103.33358476832	1.71213074316
+3	66635	2107.14680828927	1.71213266403
+3	66935	2126.99801219493	1.71213024864
+3	67122	2130.1648307481	1.71213004444
+3	67307	2138.01900304998	1.71213316853
+3	67411	2141.01623444829	1.71212974521
+3	67781	2149.80668060131	1.71213060103
+3	67918	2155.69234307401	1.71213072882
+3	68049	2158.7747612025	2.22502579856
+3	68181	2170.74070104399	1.71213267149
+3	68361	2172.71477345408	1.71213160389
+3	68596	2174.71402441588	1.79520162212
+3	69219	2193.36167705582	1.7121303397
+3	69399	2195.83838067617	1.71213009342
+3	69583	2198.23916388271	1.71213010761
+3	69918	2216.51141965202	1.71213043246
+3	70283	2230.32169464862	1.71213002979
+3	70511	2237.74143944284	1.7121297761
+3	70980	2244.18202209199	1.71213059186
+3	71702	2265.27485510813	1.71212967251
+3	71838	2269.72736328136	1.71213041357
+3	72072	2273.64152014606	1.71212968144
+3	72229	2285.84778662759	1.71213074316
+3	72494	2297.0587638753	1.71213022369
+3	72813	2308.97652544616	1.71213024864
+3	73081	2318.59081602776	1.71213273828
+3	73290	2322.24064158482	1.71212974521
+3	73451	2332.05291486696	1.71213072882
+3	73789	2343.38422763305	1.71213060103
+3	73983	2347.23654346722	1.71213117732
+3	74384	2355.03776204463	1.71213093979
+3	74631	2367.7275856591	1.71213112593
+3	74856	2375.81178636955	1.71213009342
+3	75139	2382.99694960207	1.71213316853
+3	75268	2386.59447114608	1.7121321794
+3	75435	2394.05257265725	1.71213005178
+3	75641	2405.29968986961	1.71213257573
+3	75772	2410.07711558406	1.71213120822
+3	75980	2413.93945115423	1.71213043246
+3	76171	2418.16751702815	1.71213041373
+3	76478	2426.89016820737	1.71213010761
+3	76604	2429.85497126673	1.71213002979
+3	76835	2432.92695202853	1.7121297761
+3	76986	2434.62219694517	1.71213060676
+3	77229	2445.10157333619	1.71213059186
+3	77347	2451.07750404446	1.71213041357
+3	77477	2465.71071496156	1.71212968144
+3	77628	2469.67026923695	1.71213260439
+3	77953	2480.18528285863	1.71213022369
+3	78149	2482.3810489408	1.71213029854
+3	78329	2494.8859138885	1.71212967251
+3	78616	2500.67918509484	1.71212974521
+3	78961	2505.41344597243	1.71213415561
+3	79124	2507.54945673038	1.71213004444
+3	79337	2512.7969569956	1.71213074316
+3	79550	2522.05458119121	1.71213024864
+3	79762	2530.96777116925	1.71213117732
+3	80374	2563.2647841222	1.71213072882
+3	80553	2566.72923864621	1.71213009342
+3	80801	2568.67790408373	1.71213160389
+3	81095	2579.45866133547	1.7121303397
+3	81274	2584.05254719319	1.71213037669
+3	81581	2591.02933048977	1.71213131006
+3	81803	2595.72449169298	1.71213005178
+3	81931	2607.39907245048	1.7121297761
+3	82070	2616.61010930094	1.71213002979
+3	82406	2626.42663456987	1.71213309586
+3	82635	2630.92655707988	1.71213010761
+3	82919	2646.02475099701	1.71212968144
+3	83051	2648.67403965329	1.71213041357
+3	83398	2671.77905182289	1.71213022369
+3	83533	2678.65773702935	1.71213009349
+3	84095	2686.77262843929	1.71212967251
+3	84282	2689.86412403138	1.71212974521
+3	84960	2704.9573419028	1.71213024864
+3	85200	2708.91775627456	1.71213041373
+3	86015	2745.67429132712	1.71213112593
+3	86285	2753.78088618565	1.71213254844
+3	87093	2780.37424200637	1.7121297761
+3	87339	2787.70860367781	1.71213066453
+3	87500	2791.84415277251	3.45961863855
+3	87830	2803.65083380205	1.71213009342
+3	88085	2819.97708399035	1.7121321794
+3	88409	2842.5826675056	1.71212968144
+3	88644	2845.78362989367	1.71213022369
+3	89048	2856.34125540551	1.71213157664
+3	89533	2877.60609457855	1.71213217651
+3	89663	2879.32650325167	1.71213178728
+3	89770	2881.89182487593	1.71212974521
+3	90068	2887.40233335991	1.71213041357
+3	90572	2893.40365194802	1.71213024864
+3	90766	2896.44705832243	1.71213009349
+3	91179	2900.02407486076	1.71213029854
+3	91334	2904.28154004445	1.71213060103
+3	91810	2927.22067835428	1.71213117732
+3	91923	2929.89577634603	1.71213004444
+3	92352	2947.701787302	1.71213112593
+3	92577	2951.52988958516	1.7121303397
+3	92865	2955.76747346198	1.71213005178
+3	93000	2965.00077714041	1.71213066453
+3	93238	2967.48334691602	1.71213037669
+3	93526	2978.45059115776	1.7121297761
+3	93739	2983.26720704008	1.71213072882
+3	94007	2998.24084618749	1.71213259742
+3	94555	3026.64758674296	1.71212968144
+3	94708	3034.90113853369	1.71213157664
+3	94813	3039.57610368156	1.71213022369
+3	94970	3050.83847464242	1.71213266403
+3	95292	3064.16471172756	1.71213041357
+3	95661	3068.61998814437	1.71213108353
+3	95830	3070.75783217803	1.71212967251
+3	96063	3072.7442512308	1.71213041373
+3	96648	3083.03594846072	1.71213010761
+3	97276	3099.35264670011	1.71212974521
+3	97545	3103.70838877067	1.71213093979
+3	97711	3107.3686372962	1.71213004444
+3	98168	3120.24274661354	1.71213362993
+3	98736	3138.64770267932	1.71213005178
+3	99429	3169.56394213799	1.7121297761
+3	99686	3181.03412009485	1.71213009342
+3	100138	3207.18304893257	1.71212968144
+3	100481	3241.53207268709	1.71213253379
+3	100637	3243.96208566116	1.71213041373
+3	100769	3245.75315741671	1.71213022369
+3	101116	3254.44997484903	1.71213043246
+3	101277	3256.96434274045	2.01650091729
+3	101680	3261.26443669857	3.74770388048
+3	101730	3262.47460857807	1.71213024864
+3	102000	3268.3186194902	1.71213157664
+3	102132	3276.23007570139	1.71213074316
+3	102462	3295.03773233705	1.71213010761
+3	102689	3297.35459226669	1.71212974521
+3	102956	3300.93931096477	1.71213060103
+3	103096	3302.99411789132	1.71213112593
+3	103739	3314.38106483676	1.89062166991
+3	104170	3320.45214579162	1.71213004444
+3	104532	3335.44162733214	1.71213037669
+3	104940	3348.5916650855	1.71213059186
+3	105059	3352.00662405215	1.71213066453
+3	105216	3358.39893275196	1.71213120822
+3	105591	3371.61267495903	1.71213259742
+3	105751	3386.43479511315	1.7121297761
+3	106070	3407.58797416627	1.71213072882
+3	106183	3412.97827500122	1.71213041357
+3	106416	3420.28144430017	1.71213022369
+3	106576	3425.08561423099	2.45155462143
+3	107012	3443.12736314789	1.71212968144
+3	107652	3469.00033878084	1.71213043246
+3	108046	3472.70429795267	1.71212974521
+3	108183	3474.72266424241	1.71213024864
+3	108430	3476.98296830223	1.71213002979
+3	108718	3482.12136729171	4.97442758646
+3	108719	3482.28603094309	1.99233166645
+3	109556	3499.02264420434	4.61144515852
+3	109738	3501.11025576446	1.71213131006
+3	110255	3516.20935989444	1.71213108353
+3	110490	3529.64432169266	1.71213059186
+3	110725	3534.98071613787	1.71213010761
+3	111133	3540.12418448919	1.71213120822
+3	111329	3551.48313767448	1.71213093979
+3	111580	3570.91875862561	1.71213009342
+3	112174	3594.99774400708	1.71213072882
+4	5326	62.67943843965	1.71213024864
+4	5612	80.31556660485	1.7121303397
+4	5738	95.10981332498	1.71213037669
+4	6017	181.18086616957	1.71213254844
+4	6904	205.21425791402	1.71213066453
+4	7421	211.57197061126	1.71213009349
+4	7661	213.47414694362	1.71213043246
+4	7920	216.05487812004	1.71213010761
+4	8383	219.06685489527	1.71213074316
+4	8629	221.62214489316	2.30332819731
+4	8871	226.28701909016	1.71213029854
+4	9037	228.45760826437	1.71212974521
+4	9194	230.54591736509	1.71213093979
+4	9437	235.09596738761	1.71213112593
+4	9765	239.88495934519	1.71213005178
+4	9899	242.18877235883	1.71213002979
+4	10160	245.80418504454	2.71109109518
+4	10815	256.19008506212	1.71213024864
+4	10963	259.24762855856	1.7121303397
+4	11139	264.60031924276	1.71212968144
+4	11660	286.49579810182	1.71213037669
+4	11944	374.33188258127	1.71213291757
+4	12378	384.12869105157	1.71213004444
+4	12615	389.37163043669	1.71213022369
+4	12967	396.22478510613	1.71213009349
+4	13177	400.24427087246	1.71213060676
+4	13389	403.17956942346	1.7121297761
+4	13604	406.38513819044	1.71213131006
+4	13832	409.3635377081	1.71213029854
+4	14382	417.48591445363	1.71212974521
+4	14985	425.24411860999	1.71212967251
+4	15235	428.70570847972	1.71213009342
+4	15897	443.1088790923	12.10007567047
+4	15898	443.11390354105	9.10408485461
+4	16187	446.20408186918	3.74742591115
+4	16236	446.89911371807	1.71213043246
+4	16548	453.83630032296	1.71213005178
+4	16799	459.90313115956	1.71213059186
+4	16923	463.51594503231	1.71213037669
+4	17050	477.18450125494	1.71212968144
+4	17294	490.74964788846	1.71213002979
+4	17472	496.21962261164	1.7121328437
+4	18119	564.21582939293	1.71213022369
+4	18467	570.96639267008	1.71213066453
+4	18937	584.19203656793	1.71213029854
+4	19465	591.48241991161	1.71213004444
+4	19757	595.13565717146	1.71212974521
+4	19964	600.27834784868	1.71213010761
+4	20401	603.59597963187	1.71212967251
+4	20715	612.3217361678	1.71213009342
+4	21173	615.80137479736	1.83715477015
+4	21566	632.40379984519	1.71213293646
+4	21781	639.24851136736	1.71213041373
+4	22032	642.20471184271	1.71213059186
+4	22591	652.64355280897	1.71212968144
+4	22744	654.72781593923	1.71213267149
+4	22971	665.23650621341	1.71213002979
+4	23210	675.72402954685	1.71213037669
+4	23458	697.90562561874	1.7121303397
+4	23653	741.59920930075	1.71213120822
+4	23916	744.99855070675	1.71213009349
+4	24540	763.08794475218	1.71213254844
+4	24675	769.47806370139	1.71213212713
+4	25114	776.82990991955	1.71213010761
+4	25854	786.06751214804	1.71213009342
+4	26023	787.84691696863	1.71213041357
+4	26236	793.05669681513	1.71213074316
+4	26418	796.14463733779	1.71213060103
+4	26637	800.60237242925	1.71212974521
+4	26771	804.30424205323	1.71213024864
+4	27359	816.37372162545	1.71213060676
+4	27497	820.70932571619	1.71213108353
+4	27870	825.88461450507	1.71212968144
+4	28393	852.95398228969	1.71213037669
+4	28519	877.48708244677	1.71213043246
+4	28866	886.31551230207	1.71213255578
+4	29151	895.77082852295	1.7121303397
+4	29275	904.62203808181	1.71213002979
+4	29968	948.9616491358	1.71213093979
+4	30074	953.93003685187	1.7121297761
+4	30770	963.34141696259	1.71213004444
+4	31016	967.00253591524	1.71212967251
+4	31477	971.26555401992	1.71213009342
+4	31620	975.2684854737	1.71213010761
+4	31841	979.12453994855	1.71212974521
+4	31996	980.91368654888	1.71213074316
+4	32276	987.91992845555	1.71213066453
+4	33111	998.78389113498	1.71212968144
+4	34198	1051.66998334206	1.71213108353
+4	34304	1062.51655899921	1.71213041373
+4	34441	1073.0944893551	1.71213005178
+4	34573	1077.13923884202	1.71213002979
+4	34810	1080.14690508961	1.71213037669
+4	35720	1136.46992318968	1.71213009349
+4	35908	1139.05532772869	1.71212967251
+4	36577	1155.53780262847	1.71213259742
+4	36802	1161.80148528838	1.71213066453
+4	37255	1171.77673974409	1.71212968144
+4	37827	1178.50825447338	1.71213029854
+4	37982	1181.90518298042	1.71213072882
+4	38191	1184.49600715244	1.7121297761
+4	38571	1195.36749273994	1.71213209831
+4	38918	1201.44128435243	1.71213060103
+4	39030	1204.67994201028	1.71212974521
+4	39291	1206.76869116965	1.71213060676
+4	39539	1211.85575980614	1.71213112593
+4	39769	1239.08990701139	1.71213010761
+4	40104	1248.55935709329	1.71213041373
+4	40243	1258.65354768939	1.71213005178
+4	40373	1260.46576290293	1.71213037669
+4	40612	1267.61234996023	1.71213002979
+4	40955	1275.8895690467	1.71213293646
+4	41135	1297.35216996474	1.71213059186
+4	41460	1310.01321427848	1.71213009349
+4	41711	1315.76491845096	1.71212967251
+4	42026	1330.6928008886	1.71213160389
+4	42300	1346.87802815203	1.71212968144
+4	42430	1350.35512491963	1.71213066453
+4	42906	1363.72344610096	1.71213024864
+4	43170	1373.38318267398	1.71213260439
+4	43413	1379.52746541561	1.71213074316
+4	43573	1383.07127429802	1.71213022369
+4	43779	1385.10144750827	1.71213060103
+4	43997	1388.53393635901	1.7121297761
+4	44287	1391.03215835849	1.71212974521
+4	44506	1394.90123620943	1.71213072882
+4	44776	1398.14870551179	1.73764658997
+4	44890	1402.45720563779	1.71213004444
+4	45148	1409.66477274001	1.71213112593
+4	45272	1413.82582032664	1.71213029854
+4	45454	1416.97418016742	1.71213010761
+4	45651	1420.2832865974	2.51512552246
+4	45775	1437.87205933206	1.7121303397
+4	46106	1440.83072730684	1.71213037669
+4	46236	1442.66548477099	1.71213041357
+4	46379	1447.42470960719	1.71213005178
+4	46503	1458.81145630103	1.71213043246
+4	46658	1461.29788549917	2.41181848173
+4	46789	1464.52183661116	1.71213227685
+4	46921	1474.90751248149	1.71213093979
+4	47360	1502.10555012457	1.71213002979
+4	47649	1513.60131951095	1.71212967251
+4	48129	1533.52156797435	1.71213266403
+4	48234	1535.25459772636	1.71212968144
+4	48391	1541.25024937772	1.71213165161
+4	49225	1560.06011998194	1.71213022369
+4	49508	1562.08857306084	1.71213024864
+4	49658	1567.01559150649	1.71212974521
+4	49784	1568.75833699878	1.7121297761
+4	49976	1574.55811146667	1.71213004444
+4	50828	1604.82554295851	1.71213029854
+4	51023	1611.31577720807	1.71213060103
+4	51249	1617.27447437542	1.71213037669
+4	51582	1619.38887589926	1.71213005178
+4	51789	1633.5125240702	1.71213009342
+4	51920	1638.19922766306	1.71213010761
+4	52090	1641.66629470092	1.71213291773
+4	52410	1650.94446735011	1.71213043246
+4	53010	1677.00336352283	1.71213120822
+4	53170	1684.78015255953	1.71213009349
+4	53578	1699.12995443208	1.71213041357
+4	53949	1713.71688145841	1.71212967251
+4	54773	1740.29206478488	1.71213074316
+4	54879	1743.03459330286	1.71213022369
+4	55038	1748.63994770624	1.71213072882
+4	55251	1753.8472268026	1.71212974521
+4	55919	1766.48876711988	1.71213275264
+4	56116	1772.4746690539	1.71213163222
+4	56274	1781.63542746887	1.7121297761
+4	56579	1792.31027696691	1.71213002979
+4	57077	1798.6197892156	1.71213005178
+4	57279	1813.98092773839	1.71213037669
+4	57560	1821.39006224006	1.71213041373
+4	57978	1833.24001105472	1.7121303397
+4	58175	1839.31880397707	1.71213060676
+4	58348	1842.53069630579	1.71213009342
+4	58483	1845.25338202067	1.71213010761
+4	58818	1860.05040419789	1.71213043246
+4	59192	1875.06872465506	1.71213212713
+4	59319	1885.46674749727	1.71213059186
+4	59595	1891.94717352407	1.71213217651
+4	60046	1907.36545813719	1.71213009349
+4	60314	1930.08771980293	1.71213074316
+4	60626	1932.01269194507	1.71213022369
+4	60985	1943.35579988684	1.71213024864
+4	61142	1945.88637286571	1.71213117732
+4	61617	1958.56141036652	1.71213072882
+4	61780	1961.36794179426	1.71212974521
+4	61997	1969.94789857139	1.71213060103
+4	62237	1974.94011069994	1.71213160389
+4	62464	1978.5865112961	1.71213029854
+4	62698	1986.91132457409	1.71212968144
+4	62943	1996.64504008696	1.71213005178
+4	63435	2003.40982649974	1.7121297761
+4	63652	2008.64935430833	1.7121303397
+4	63928	2017.20431269699	1.71213259742
+4	64048	2022.24510637879	1.71213037669
+4	64183	2026.28119159509	1.71213010761
+4	64379	2031.86014038982	1.7121321794
+4	64538	2035.63100731461	1.71213041373
+4	64672	2042.05505459992	1.71213043246
+4	64826	2045.04935239698	1.71213131006
+4	65365	2064.78199904133	1.71213157664
+4	65544	2070.46087455149	1.71213059186
+4	65662	2077.17349675804	1.71212967251
+4	66135	2094.50004895593	1.71213009349
+4	66347	2103.33358476832	1.71213074316
+4	66635	2107.14680828927	1.71213266403
+4	66935	2126.99801219493	1.71213024864
+4	67122	2130.1648307481	1.71213004444
+4	67307	2138.01900304998	1.71213316853
+4	67411	2141.01623444829	1.71212974521
+4	67781	2149.80668060131	1.71213060103
+4	67918	2155.69234307401	1.71213072882
+4	68049	2158.7747612025	2.22502579856
+4	68181	2170.74070104399	1.71213267149
+4	68361	2172.71477345408	1.71213160389
+4	68596	2174.71402441588	1.79520162212
+4	69219	2193.36167705582	1.7121303397
+4	69399	2195.83838067617	1.71213009342
+4	69583	2198.23916388271	1.71213010761
+4	69918	2216.51141965202	1.71213043246
+4	70283	2230.32169464862	1.71213002979
+4	70511	2237.74143944284	1.7121297761
+4	70980	2244.18202209199	1.71213059186
+4	71702	2265.27485510813	1.71212967251
+4	71838	2269.72736328136	1.71213041357
+4	72072	2273.64152014606	1.71212968144
+4	72229	2285.84778662759	1.71213074316
+4	72494	2297.0587638753	1.71213022369
+4	72813	2308.97652544616	1.71213024864
+4	73081	2318.59081602776	1.71213273828
+4	73290	2322.24064158482	1.71212974521
+4	73451	2332.05291486696	1.71213072882
+4	73789	2343.38422763305	1.71213060103
+4	73983	2347.23654346722	1.71213117732
+4	74384	2355.03776204463	1.71213093979
+4	74631	2367.7275856591	1.71213112593
+4	74856	2375.81178636955	1.71213009342
+4	75139	2382.99694960207	1.71213316853
+4	75268	2386.59447114608	1.7121321794
+4	75435	2394.05257265725	1.71213005178
+4	75641	2405.29968986961	1.71213257573
+4	75772	2410.07711558406	1.71213120822
+4	75980	2413.93945115423	1.71213043246
+4	76171	2418.16751702815	1.71213041373
+4	76478	2426.89016820737	1.71213010761
+4	76604	2429.85497126673	1.71213002979
+4	76835	2432.92695202853	1.7121297761
+4	76986	2434.62219694517	1.71213060676
+4	77229	2445.10157333619	1.71213059186
+4	77347	2451.07750404446	1.71213041357
+4	77477	2465.71071496156	1.71212968144
+4	77628	2469.67026923695	1.71213260439
+4	77953	2480.18528285863	1.71213022369
+4	78149	2482.3810489408	1.71213029854
+4	78329	2494.8859138885	1.71212967251
+4	78616	2500.67918509484	1.71212974521
+4	78961	2505.41344597243	1.71213415561
+4	79124	2507.54945673038	1.71213004444
+4	79337	2512.7969569956	1.71213074316
+4	79550	2522.05458119121	1.71213024864
+4	79762	2530.96777116925	1.71213117732
+4	80374	2563.2647841222	1.71213072882
+4	80553	2566.72923864621	1.71213009342
+4	80801	2568.67790408373	1.71213160389
+4	81095	2579.45866133547	1.7121303397
+4	81274	2584.05254719319	1.71213037669
+4	81581	2591.02933048977	1.71213131006
+4	81803	2595.72449169298	1.71213005178
+4	81931	2607.39907245048	1.7121297761
+4	82070	2616.61010930094	1.71213002979
+4	82406	2626.42663456987	1.71213309586
+4	82635	2630.92655707988	1.71213010761
+4	82919	2646.02475099701	1.71212968144
+4	83051	2648.67403965329	1.71213041357
+4	83398	2671.77905182289	1.71213022369
+4	83533	2678.65773702935	1.71213009349
+4	84095	2686.77262843929	1.71212967251
+4	84282	2689.86412403138	1.71212974521
+4	84960	2704.9573419028	1.71213024864
+4	85200	2708.91775627456	1.71213041373
+4	86015	2745.67429132712	1.71213112593
+4	86285	2753.78088618565	1.71213254844
+4	87093	2780.37424200637	1.7121297761
+4	87339	2787.70860367781	1.71213066453
+4	87500	2791.84415277251	3.45961863855
+4	87830	2803.65083380205	1.71213009342
+4	88085	2819.97708399035	1.7121321794
+4	88409	2842.5826675056	1.71212968144
+4	88644	2845.78362989367	1.71213022369
+4	89048	2856.34125540551	1.71213157664
+4	89533	2877.60609457855	1.71213217651
+4	89663	2879.32650325167	1.71213178728
+4	89770	2881.89182487593	1.71212974521
+4	90068	2887.40233335991	1.71213041357
+4	90572	2893.40365194802	1.71213024864
+4	90766	2896.44705832243	1.71213009349
+4	91179	2900.02407486076	1.71213029854
+4	91334	2904.28154004445	1.71213060103
+4	91810	2927.22067835428	1.71213117732
+4	91923	2929.89577634603	1.71213004444
+4	92352	2947.701787302	1.71213112593
+4	92577	2951.52988958516	1.7121303397
+4	92865	2955.76747346198	1.71213005178
+4	93000	2965.00077714041	1.71213066453
+4	93238	2967.48334691602	1.71213037669
+4	93526	2978.45059115776	1.7121297761
+4	93739	2983.26720704008	1.71213072882
+4	94007	2998.24084618749	1.71213259742
+4	94555	3026.64758674296	1.71212968144
+4	94708	3034.90113853369	1.71213157664
+4	94813	3039.57610368156	1.71213022369
+4	94970	3050.83847464242	1.71213266403
+4	95292	3064.16471172756	1.71213041357
+4	95661	3068.61998814437	1.71213108353
+4	95830	3070.75783217803	1.71212967251
+4	96063	3072.7442512308	1.71213041373
+4	96648	3083.03594846072	1.71213010761
+4	97276	3099.35264670011	1.71212974521
+4	97545	3103.70838877067	1.71213093979
+4	97711	3107.3686372962	1.71213004444
+4	98168	3120.24274661354	1.71213362993
+4	98736	3138.64770267932	1.71213005178
+4	99429	3169.56394213799	1.7121297761
+4	99686	3181.03412009485	1.71213009342
+4	100138	3207.18304893257	1.71212968144
+4	100481	3241.53207268709	1.71213253379
+4	100637	3243.96208566116	1.71213041373
+4	100769	3245.75315741671	1.71213022369
+4	101116	3254.44997484903	1.71213043246
+4	101277	3256.96434274045	2.01650091729
+4	101680	3261.26443669857	3.74770388048
+4	101730	3262.47460857807	1.71213024864
+4	102000	3268.3186194902	1.71213157664
+4	102132	3276.23007570139	1.71213074316
+4	102462	3295.03773233705	1.71213010761
+4	102689	3297.35459226669	1.71212974521
+4	102956	3300.93931096477	1.71213060103
+4	103096	3302.99411789132	1.71213112593
+4	103739	3314.38106483676	1.89062166991
+4	104170	3320.45214579162	1.71213004444
+4	104532	3335.44162733214	1.71213037669
+4	104940	3348.5916650855	1.71213059186
+4	105059	3352.00662405215	1.71213066453
+4	105216	3358.39893275196	1.71213120822
+4	105591	3371.61267495903	1.71213259742
+4	105751	3386.43479511315	1.7121297761
+4	106070	3407.58797416627	1.71213072882
+4	106183	3412.97827500122	1.71213041357
+4	106416	3420.28144430017	1.71213022369
+4	106576	3425.08561423099	2.45155462143
+4	107012	3443.12736314789	1.71212968144
+4	107652	3469.00033878084	1.71213043246
+4	108046	3472.70429795267	1.71212974521
+4	108183	3474.72266424241	1.71213024864
+4	108430	3476.98296830223	1.71213002979
+4	108718	3482.12136729171	4.97442758646
+4	108719	3482.28603094309	1.99233166645
+4	109556	3499.02264420434	4.61144515852
+4	109738	3501.11025576446	1.71213131006
+4	110255	3516.20935989444	1.71213108353
+4	110490	3529.64432169266	1.71213059186
+4	110725	3534.98071613787	1.71213010761
+4	111133	3540.12418448919	1.71213120822
+4	111329	3551.48313767448	1.71213093979
+4	111580	3570.91875862561	1.71213009342
+4	112174	3594.99774400708	1.71213072882
+5	5355	63.58214228823	41.318619188303
+5	9923	243.09309394936	1444.1903410636
+5	14877	423.53198893748	486.69585486111
+5	20139	601.88384995936	187.74995444374
+5	25292	778.60277985451	119.14431886441
+5	30801	965.29040624273	54.613515401454
+5	35747	1137.34319805618	516.55997850695
+5	41605	1314.05278877845	725.10185288196
+5	47443	1511.88918983844	413.54719471614
+5	53848	1712.0047517859	158.79878798737
+5	59442	1890.23504134756	1257.8995033161
+5	65561	2075.46136708553	254.96963130932
+5	71591	2263.56272543562	99.740650985124
+5	78228	2493.17378421599	850.9345214496
+5	83887	2685.06049876678	434.50639409744
+5	89381	2875.89396240204	300.51550009245
+5	95667	3069.04570250552	1786.3364385829
+5	101385	3257.51673281809	2399.0563177046
+5	107263	3458.88458807443	20.38144928299
+6	5489	65.70791194751	2.12576965928
+6	6126	184.76778450379	1.71213022369
+6	14649	420.7398527685	1.71213215588
+6	19136	587.06142604699	1.71213212713
+6	30416	959.14571572251	1.71213009349
+6	33958	1033.96277427058	1.71213272769
+6	34952	1086.63482403897	1.7121303397
+6	42682	1358.08731013512	1.71213009342
+6	47998	1521.25864180097	1.71213309586
+6	48657	1546.2865008413	1.71213066453
+6	53722	1703.74087694634	1.71213059186
+6	54238	1721.5533070672	1.71212968144
+6	59811	1903.15831316399	1.71213041357
+6	61252	1948.19790050868	1.71213004444
+6	64959	2050.43068437269	1.71213060676
+6	65845	2080.23332228454	1.71213041357
+6	66750	2112.75653706346	1.71213022369
+6	71321	2259.95902149651	1.71213280254
+6	72688	2306.34888679548	1.71213004444
+6	88847	2849.30269887754	1.71213010761
+6	91571	2924.46866770178	1.71213093979
+6	96934	3091.99385608016	1.71213009349
+6	98397	3124.625782852	1.7121303397
+6	98985	3152.21987864019	1.71213037669
+6	103530	3312.32104091852	1.71213009349
+6	107417	3460.59671774694	1.71212967251
+6	109148	3493.52828001291	1.71213255578
+6	111461	3564.26448178063	1.71213267149
+6	111698	3576.06392302596	1.7121297761
+7	5489	65.70791194751	2.12576965928
+7	6126	184.76778450379	1.71213022369
+7	14649	420.7398527685	1.71213215588
+7	19136	587.06142604699	1.71213212713
+7	30416	959.14571572251	1.71213009349
+7	33958	1033.96277427058	1.71213272769
+7	34952	1086.63482403897	1.7121303397
+7	42682	1358.08731013512	1.71213009342
+7	47998	1521.25864180097	1.71213309586
+7	48657	1546.2865008413	1.71213066453
+7	53722	1703.74087694634	1.71213059186
+7	54238	1721.5533070672	1.71212968144
+7	59811	1903.15831316399	1.71213041357
+7	61252	1948.19790050868	1.71213004444
+7	64959	2050.43068437269	1.71213060676
+7	65845	2080.23332228454	1.71213041357
+7	66750	2112.75653706346	1.71213022369
+7	71321	2259.95902149651	1.71213280254
+7	72688	2306.34888679548	1.71213004444
+7	88847	2849.30269887754	1.71213010761
+7	91571	2924.46866770178	1.71213093979
+7	96934	3091.99385608016	1.71213009349
+7	98397	3124.625782852	1.7121303397
+7	98985	3152.21987864019	1.71213037669
+7	103530	3312.32104091852	1.71213009349
+7	107417	3460.59671774694	1.71212967251
+7	109148	3493.52828001291	1.71213255578
+7	111461	3564.26448178063	1.71213267149
+7	111698	3576.06392302596	1.7121297761
+8	5501	78.60343626515	426.59322694881
+8	10846	257.53549821886	146.46924191138
+8	17319	494.50748976794	1200.327702081
+8	23347	696.19349527904	1449.8422400049
+8	29040	894.05869818325	85.015242910213
+8	34841	1084.92269369927	30.2184146186
+8	40399	1263.38297342009	1440.3587561146
+8	45664	1436.15992899236	508.31049404687
+8	51268	1617.65221114706	350.03497735911
+8	57815	1831.52788071502	285.97507899161
+8	63532	2006.93722396863	334.74205006336
+8	69106	2191.64954671612	2268.0273911323
+8	74693	2374.20119329484	576.23815273668
+8	80984	2577.74653099577	204.76922143911
+8	86677	2774.21368180652	656.66499348706
+8	92410	2949.81775924546	642.69453007515
+8	98281	3122.9136525123	14.21857894885
+8	103556	3312.49044316685	366.08060646627
+8	108892	3491.94573550406	49.249484141235
+9	5632	93.39768294829	121.97595215046
+9	11554	284.78366772513	77.006347036734
+9	16814	461.80381465562	664.45180824339
+9	23102	674.01189917016	227.45959607935
+9	28236	851.241851913	85.55906989852
+9	34649	1078.43477471292	946.27484068933
+9	40264	1258.75363252624	599.34183450286
+9	45897	1439.11859693015	905.31834888719
+9	51088	1615.56234399873	1232.5191671318
+9	57173	1812.2687973617	100.19161412124
+9	63938	2020.5329760021	813.61345802965
+9	69287	2195.12421350895	673.80649844076
+9	75332	2392.85389256973	523.17563621188
+9	81112	2582.3404168165	790.89684435833
+9	87364	2788.38453413396	66.098778910835
+9	93078	2965.77121653933	59.752296850432
+9	98879	3150.5077482635	7.5707678515736
+9	104370	3333.72949695545	162.83933695734
+9	110959	3539.4299067623	273.04759222839
+10	5763	178.78468745616	1262.5095525122
+10	11685	360.20725158558	816.62767750997
+10	19361	590.30347839671	689.16656603714
+10	25349	779.58589737465	327.7614948257
+10	31635	976.38758815202	561.48857894098
+10	36587	1156.70304707424	518.18641648967
+10	44569	1396.41105892182	1492.2866402761
+10	50163	1578.37407457756	1743.1127055003
+10	55991	1770.76253742168	1147.1559753286
+10	61682	1960.75436200126	505.33418062333
+10	68470	2173.84865936608	784.74312265569
+10	74746	2374.66872827782	414.83240567324
+10	81352	2588.41948002057	122.16836212955
+10	86350	2761.00954794497	254.34898703434
+10	91959	2939.72134861909	731.14037026921
+10	97912	3116.45327129426	232.27959829456
+10	102537	3296.40741902104	25.34171624097
+10	108450	3477.14693970525	161.71083133993
+11	5816	179.46873362113	245.18925032147
+11	12275	382.41656100713	262.80933932682
+11	19306	589.77028986717	148.71119208497
+11	24336	761.37581220374	491.22955749661
+11	30557	961.62928691815	194.31770225238
+11	36995	1168.43134773196	1470.5410825472
+11	44787	1400.74507559335	1548.2007871652
+11	49823	1572.84598142223	765.24347972817
+11	55098	1752.52491904688	198.03873328199
+11	61145	1946.48577046424	34.174575906338
+11	67017	2128.45270070366	55.689556126277
+11	72588	2304.63675675104	36.98519093461
+11	78966	2505.83732668594	595.86729747527
+11	86082	2752.06875363721	420.91386796952
+11	91815	2928.18364630159	789.15528496708
+11	97553	3105.65650725176	356.77393116236
+11	103962	3318.74001574718	854.66307237748
+11	109303	3494.41119904582	169.3548974071
+12	6024	183.0556542801	11.557843905296
+12	12464	387.659500213	501.85427912908
+12	18021	562.50369916924	1180.4040184467
+12	25186	778.36770659081	1003.8440802045
+12	33808	1032.25064154289	28.806892434976
+12	39169	1206.59988163493	216.74144666454
+12	43422	1381.35914407433	1235.9695488116
+12	48970	1558.34798975825	338.24673309941
+12	54779	1741.32246307917	382.22017003146
+12	60370	1930.30056172138	947.09968787197
+12	66652	2111.04440683977	25.351097209997
+12	72343	2295.34663365161	659.51836154336
+12	77857	2478.47315263494	848.0753676167
+12	83300	2670.0669215992	711.12479094275
+12	88491	2844.07149966998	1303.7926612664
+12	94714	3037.86397345787	453.40577299315
+12	100664	3244.04102719302	186.13518559164
+12	106319	3418.56931407648	1542.1916644064
+12	111948	3593.3271796925	169.49694058817
+13	6160	187.10513919163	37.242448024164
+13	11794	372.6197496637	2390.4485336395
+13	20605	612.28402750713	513.03560621497
+13	25868	786.13478655506	686.22603022726
+13	30503	961.2740651127	258.24303178221
+13	37503	1175.78682019398	252.52048224687
+13	46125	1440.95335435742	529.88458237308
+13	53477	1697.41782401851	644.98456626322
+13	59708	1901.44618275042	29.411446404609
+13	65688	2078.52119187097	13.801450059002
+13	71734	2268.01523286779	324.99112682503
+13	77246	2449.36537363089	470.44149396757
+13	82945	2646.96190923972	629.91097464171
+13	89909	2885.69020294634	637.97197131774
+13	94979	3062.45258131399	68.462971207211
+13	100331	3240.01256109531	1215.0424331979
+13	106080	3411.26614458765	87.379363691536
+14	6268	190.313350748	155.52924833528
+14	14129	416.34521468789	82.807405406528
+14	20296	603.26092240057	451.36772695541
+14	26113	791.84218104153	276.70601524324
+14	31204	969.44428939795	614.36003955332
+14	36266	1152.36915767826	537.66525865364
+14	43477	1383.03461110806	117.7829990335
+14	50054	1575.9262681679	1086.3070196597
+14	55504	1763.12934146332	786.79414811452
+14	62240	1975.27371824936	498.78425923582
+14	68772	2178.14745639546	1586.2952157524
+14	74151	2351.3013193031	942.8844196832
+14	79933	2553.7495968677	523.08700097282
+14	85618	2734.28959486951	29.590983813364
+14	91574	2924.71267753845	193.45121065291
+14	97022	3096.59373752899	676.09392898171
+14	103741	3315.28275943742	77.483774538304
+14	109799	3503.05945743615	522.58229520539
+15	6381	197.27878709926	2015.9555457783
+15	13478	404.67300688038	110.76596148693
+15	18720	581.92914243148	102.33622464629
+15	24281	759.83765541015	256.45237394319
+15	30448	960.53427756544	595.35707323868
+15	35515	1133.79907524643	508.97853366946
+15	41362	1309.75470631916	292.57603904262
+15	47038	1489.6960206216	494.38487288854
+15	53072	1683.96637746098	267.25465025812
+15	58669	1859.12905052062	799.95282742425
+15	64702	2043.33722108692	164.55000821297
+15	70545	2239.79065123841	630.62934959648
+15	76072	2417.60866067756	63.757531927644
+15	81406	2589.31719917971	1118.8830706846
+15	87135	2785.43697946309	62.362600256953
+15	93025	2965.68324465782	1483.3579791942
+15	98633	3138.53976512938	859.6012298655
+15	103614	3313.97089686234	422.66890468516
+15	109559	3499.3981244544	474.68033643887
+16	6488	202.20716728705	1328.5218582984
+16	12002	377.14360674446	276.10945048855
+16	17643	550.99911277247	787.16812684699
+16	23531	740.32558464534	169.95234808494
+16	29407	915.59905933409	556.06493381818
+16	36109	1150.54124546597	369.93141197117
+16	42031	1332.00774893759	661.41524115658
+16	48007	1531.80943531032	277.47298916559
+16	53734	1704.91315741271	473.84913353515
+16	60478	1931.53826132367	511.03461329502
+16	66459	2105.43467562524	377.69557386186
+16	73083	2318.61658632982	518.17948620693
+16	79020	2506.20918834001	60.64152772983
+16	83778	2683.74115685725	223.62444415868
+16	89057	2865.28879709435	557.11810850891
+16	94848	3049.12634197839	1007.9320196862
+16	101278	3257.11998073284	606.06985280229
+16	108212	3475.13028493006	1143.7376440714
+17	6541	202.56774134561	1087.5832979524
+17	13052	398.71627461053	781.01241658452
+17	18493	571.58595021856	628.14485541923
+17	25239	778.47570280731	230.10718974546
+17	31150	969.1665805038	176.29292969267
+17	37397	1175.35172473326	196.37606902705
+17	42996	1371.67105006959	238.61130342922
+17	48739	1547.90312209229	957.92191374544
+17	54376	1725.22454622467	1246.9214127271
+17	60084	1918.82558635904	1340.2047525666
+17	66404	2105.11419680377	121.10630072983
+17	72239	2292.93593312397	880.83600670981
+17	77505	2467.95813663256	640.48332946245
+17	84311	2690.56072529093	445.14813315096
+17	90905	2898.21375372525	1453.3962448496
+17	95963	3072.51080504314	255.16790310485
+17	100808	3249.76295774062	350.27707552667
+17	106449	3422.63405960956	465.62495262872
+17	112052	3594.48609988909	1252.7823916804
+18	6594	202.95758650413	177.23067273395
+18	14234	416.82032905555	419.66109479058
+18	21865	641.6734390275	207.87409728333
+18	27369	818.99719463266	182.90452263766
+18	34076	1049.95785225853	703.25154595543
+18	39843	1243.68792635366	273.36120481594
+18	45788	1438.84256744275	813.88682664008
+18	52496	1652.93785539333	606.26828882448
+18	58055	1838.2405494071	198.27172881868
+18	63674	2015.09328678304	694.08596072552
+18	71171	2259.35241037359	413.4139092867
+18	78035	2480.80090732041	549.28086333503
+18	83086	2660.80527515696	1007.6812179442
+18	89803	2883.40398893905	928.97308234667
+18	95529	3066.90785706084	1372.8783128292
+18	104019	3320.00974200178	1484.0599534877
+18	110129	3514.49722881091	214.10274986434
+19	6649	203.50212724949	443.43310068307
+19	11948	376.31496409662	659.09847896051
+19	18315	569.25426200555	1335.3303713082
+19	23655	741.69689884179	52.41406084097
+19	32120	986.20779779102	286.58079089681
+19	36700	1160.08935462385	152.07108444466
+19	42327	1348.6429942551	688.55833986138
+19	48451	1544.57437017677	10.063295131616
+19	54138	1721.09671290054	1470.2748228313
+19	60423	1930.58023821984	119.75180884214
+19	67157	2136.30686988145	1154.8224093697
+19	74989	2381.28481643354	398.83501950898
+19	80098	2561.43305601238	1324.6813786356
+19	87188	2785.99647301328	524.17420194676
+19	92900	2963.28864647588	3161.0867210219
+19	99008	3155.34705196696	781.19852766755
+19	104955	3350.29449338762	647.83076369743
+19	110746	3537.6463446773	286.14666450956
+20	6935	206.44325123923	816.08759607261
+20	17478	498.54658177218	566.4631270834
+20	22998	671.62069960441	749.73614494773
+20	28183	851.19636193211	743.02926111387
+20	33967	1040.53287947517	2458.6471038503
+20	40634	1268.80512262719	683.9004651209
+20	47150	1498.28528762645	19.153675213969
+20	52778	1670.4993229636	135.19892032085
+20	58965	1871.56305443612	20.753157626205
+20	65187	2063.06986746469	432.6984954548
+20	71009	2252.54332927056	74.403956565673
+20	77632	2469.90019423549	1021.1990443665
+20	83559	2678.94281877301	96.043494002422
+20	88926	2854.62912382887	141.87049888798
+20	94586	3033.18900695705	1166.0721131702
+20	101875	3266.60648791356	578.51782321089
+20	107146	3446.3872949891	177.55606298693
+21	6988	206.64081996504	410.59287572097
+21	12165	380.59506774627	791.6447480679
+21	17747	552.30495084193	1023.5376460519
+21	24062	754.00589954475	56.245313610238
+21	30160	957.17483003024	93.695439267499
+21	36162	1150.88221446912	106.35031811587
+21	41904	1330.62644785293	19.111872412177
+21	47548	1513.13997657878	68.293408537839
+21	53197	1685.14586573673	594.24507995294
+21	59329	1885.64023217394	226.81476934361
+21	65077	2058.1860170718	540.13307460946
+21	70759	2242.46254901676	213.98045898411
+21	76684	2432.41247844409	1678.56089403
+21	82256	2626.1217409439	26.148971960433
+21	89535	2877.61437146439	526.21052940729
+21	95727	3069.82082616177	109.32849129672
+21	103316	3308.21791703505	519.4859540336
+21	109615	3500.29232453114	921.89623848554
+22	7043	207.1031545157	629.5934910063
+22	17590	549.85160185697	20.607683183637
+22	24169	756.36908812069	67.410364978916
+22	29629	930.60978765583	973.97142754161
+22	39788	1242.63957332645	8.3923809427656
+22	45468	1417.76816107494	224.20767799415
+22	50903	1610.13479516749	1709.7972736546
+22	56657	1795.56839503575	110.78547420584
+22	62488	1981.99633493124	175.29069593208
+22	69664	2213.74936246204	524.29821564075
+22	75519	2403.58755729388	88.809552046097
+22	83195	2666.56198947019	1273.5009852128
+22	88435	2843.2226442327	31.162071203464
+22	94237	3019.25668201878	582.52993238557
+22	99869	3193.47981559846	768.58556398557
+22	105655	3384.92046641856	876.99633292952
+23	7265	209.85984051777	433.39793330879
+23	12813	394.51265501264	76.613878944517
+23	18261	568.26058767094	778.19464755692
+23	23763	743.28642061326	172.44392117414
+23	30213	957.43358562902	43.034865498939
+23	35570	1134.75779309619	493.86027104501
+23	41205	1308.30108418499	588.09062766926
+23	47390	1510.27016574556	1021.3848230306
+23	53019	1683.06802246604	66.448033863889
+23	59894	1905.6533280437	685.53829190274
+23	65986	2092.78791886244	703.94324711971
+23	72397	2296.29935294672	1377.4088486724
+23	78519	2500.09853140534	108.3512261289
+23	83435	2676.94560693586	122.88130362994
+23	90605	2894.73492822894	62.269140707289
+23	96835	3090.28172598667	10.378060283434
+23	103426	3310.60891082503	4.5207403928412
+23	108998	3492.62398670299	837.5200394881
+24	7318	209.94778547639	22.898647429997
+24	12646	390.41924882489	94.47680514338
+24	18953	585.34929391986	45.783018027705
+24	24553	767.76593157426	627.58978016485
+24	30855	965.44534989844	318.53809362376
+24	35804	1137.90816318761	256.73523479045
+24	41742	1320.55698904207	647.21210098715
+24	47672	1513.79912915117	408.03568027996
+24	53363	1689.52387215646	513.24878284208
+24	59069	1873.35659252793	423.65090417642
+24	65242	2063.9621160456	984.12521988303
+24	70600	2240.56145367305	430.08727260523
+24	76991	2435.09774957557	1573.9104523134
+24	82521	2630.07400549929	68.49716120075
+24	87856	2814.27319625952	347.56403505743
+24	94019	3009.43150411173	1242.6181914919
+24	99815	3192.17858403111	308.49480207487
+24	105842	3402.11671287038	222.64756023889
+24	111733	3581.63103057514	68.008464915103
+25	7501	211.76201651116	1534.7570635397
+25	16076	445.18698328561	514.93519176178
+25	21416	630.69166690873	521.42923984721
+25	28423	875.77495201431	387.48818823829
+25	35081	1101.22708123223	867.47577457821
+25	40750	1274.17743611024	213.65397459113
+25	46407	1457.09932586857	1144.6366002808
+25	52260	1649.23233691765	121.13746464709
+25	58616	1858.33827376543	960.85190581566
+25	64576	2040.34292416746	427.60053793894
+25	69768	2214.79928921956	79.562552715811
+25	75830	2412.22732072177	116.21252666142
+25	81588	2592.91842970812	198.26696207126
+25	87613	2801.69759492463	927.16682380095
+25	93430	2977.82732409566	117.61712769613
+25	101017	3252.73784441657	504.6778315218
+25	107503	3467.28820834838	713.6971169783
+26	7558	212.32894156367	1526.2262694504
+26	12408	386.27039954294	151.03208500695
+26	17917	560.40502527268	1483.0288503945
+26	23478	739.88707809253	605.03209494525
+26	29518	920.33526646495	1035.9708429921
+26	35299	1122.48457022297	333.94332936975
+26	41309	1309.23938696021	417.64568055232
+26	46931	1484.72236457966	91.754381884935
+26	52885	1675.29123231461	533.01793204381
+26	58722	1859.3215056279	251.80085026717
+26	64257	2030.85671603915	1093.3285750486
+26	69947	2217.08571277504	271.32034502801
+26	75648	2408.36498437584	858.52847909653
+26	81168	2583.75429301395	373.84317291832
+26	86730	2775.74551643306	881.51558258377
+26	92465	2950.901451123	1807.5366326419
+26	99120	3163.59813770822	432.11323132881
+26	105094	3356.68680154374	887.09770461297
+26	110853	3538.41205328097	89.765873685167
+27	7745	214.34274801243	191.13427235189
+27	14021	415.52641158312	814.86407917198
+27	19796	598.56621774107	572.908664069
+27	24897	775.11777981194	120.23637080663
+27	31501	973.55635536609	97.777810717938
+27	39659	1237.37777690378	96.05245468737
+27	45288	1415.26205005981	611.77756756367
+27	51807	1636.48709755545	1891.7561199099
+27	58367	1843.54125191306	120.91256420266
+27	64070	2024.56906148748	657.52335021771
+27	69414	2196.5270337751	325.63702658233
+27	76366	2425.17803809976	373.42741853991
+27	82466	2629.21442697227	852.52040824241
+27	88678	2847.59056876993	23.158434754658
+27	96433	3081.32381835311	416.31309500881
+27	102300	3293.32560222944	1722.0550253692
+27	110610	3533.26858603026	1004.5843486736
+28	7804	215.43518110928	766.5441292036
+28	12999	398.5321402657	102.42777341076
+28	19851	598.86426098494	144.66290870049
+28	27187	814.66159101869	490.5671807209
+28	32523	993.0276996426	2393.9429412122
+28	39058	1205.05656056289	127.76234093131
+28	45841	1438.84400048767	853.44560590083
+28	52661	1655.98061610026	1418.9601517286
+28	58002	1837.60667337031	327.85065138865
+28	64836	2048.71855376593	43.460549705142
+28	71378	2260.9616529527	344.3808671595
+28	76738	2432.91006633841	143.38443925459
+28	85296	2714.46682268137	412.72603832581
+28	90203	2890.18279134376	277.33427078505
+28	96969	3096.00117395628	552.10836234077
+28	103105	3305.76722211652	698.16982570711
+28	108586	3480.29369927664	123.91302422315
+29	7934	216.14110432521	249.73207624582
+29	14655	421.0664645164	353.61149209545
+29	22265	646.57727355233	23.841551680017
+29	28922	887.7327234787	73.865617995249
+29	35190	1112.64470601862	673.08783690178
+29	41851	1328.98066928471	94.804549871117
+29	48504	1544.87756650809	722.52529190657
+29	55393	1758.18939471679	1312.5222978249
+29	62110	1973.22797909605	1488.3447635144
+29	68184	2171.00264185019	183.68053062047
+29	74399	2361.2951188091	1554.7707729194
+29	80567	2566.96577247984	197.66924699221
+29	85732	2740.81345861299	56.610916120348
+29	91345	2921.41841578985	406.229505925
+29	97308	3101.0410748471	157.88588880096
+29	102592	3297.25007592674	884.22156604903
+29	108727	3485.53502342986	502.555226571
+30	8041	217.15982005617	665.31881533444
+30	13290	402.12900478312	30.833843588331
+30	22154	644.7356117073	555.65283748873
+30	28018	830.61097058977	658.61594496814
+30	33583	1021.04644135429	1146.5428309422
+30	39550	1230.80131719143	434.91216536423
+30	44919	1406.22452431113	459.56092893204
+30	50391	1589.44837605453	1310.5644992531
+30	56358	1784.21163249033	189.5319983774
+30	61390	1956.39319375022	32.944346385385
+30	67554	2147.53455792907	4.0026228822424
+30	73514	2341.27990772719	492.56447015374
+30	79347	2518.07158718863	62.862447552632
+30	84588	2695.23300736608	178.80567952088
+30	89162	2868.74223076059	43.708595869956
+30	95085	3063.11427730264	1126.7029231673
+30	101761	3263.01012429368	222.44213891225
+30	107036	3443.20624178703	18.380015035956
+31	8096	217.35472415211	103.70908650105
+31	15010	426.20924823453	30.477852368366
+31	20552	611.48782287743	364.38921103704
+31	26060	791.34456607197	661.53161861479
+31	31868	979.20155580572	465.97245782801
+31	36941	1167.21021887275	59.468340066442
+31	43290	1377.81533467245	605.31981905135
+31	49076	1559.59330789861	3046.7672016691
+31	54651	1738.57993404172	108.58786675013
+31	60193	1928.37558905977	214.47613618103
+31	66173	2101.62145402516	404.61553303284
+31	72108	2284.13565588443	50.251720771534
+31	79212	2511.08482625244	1163.383282194
+31	84705	2702.19008776155	121.56330735045
+31	89965	2886.70551506195	42.281838376476
+31	96144	3073.34358457921	261.41258513146
+31	102011	3274.51794495823	1140.8741341908
+31	107316	3459.33584405972	595.90855679972
+32	8205	218.07035784991	331.43152499708
+32	12756	393.11016348693	752.75577970699
+32	18154	566.47984177273	2219.4984670993
+32	26803	805.70324156175	1344.6673189953
+32	32300	987.94212016887	746.83771705538
+32	36830	1163.33314635747	41.524394914244
+32	42459	1351.62881196609	0.64349337740617
+32	49023	1558.79084656653	370.78006297592
+32	55154	1753.03060842834	1222.1732305349
+32	60317	1930.27811229567	202.12957740833
+32	66226	2102.6017255655	360.06724983013
+32	72846	2310.55446547553	1502.4152732164
+32	78699	2502.00655941243	254.83002619173
+32	84179	2689.44624326123	721.50401870576
+32	90258	2890.76618010307	253.44775146806
+32	97795	3109.45434101314	224.74570670078
+32	102246	3292.99515884195	59.97071992642
+32	107734	3469.45980588309	215.39461305789
+33	8387	219.31881669585	1009.8676552086
+33	13237	401.46743964736	1713.0371805624
+33	20029	600.60451087644	408.429034023
+33	25132	778.18355445125	2.0485673206383
+33	29976	952.21790707577	614.50160112669
+33	38040	1182.78387737634	170.10887079988
+33	43788	1386.82180658291	643.39692093724
+33	49685	1567.04620722268	568.51981103012
+33	56125	1779.92329769277	724.69362846743
+33	63130	2001.69769672364	209.69613526279
+33	70363	2236.02930966674	499.05719461045
+33	76630	2431.21482225243	612.51506152416
+33	81835	2605.68694267438	1320.1903675147
+33	86941	2778.66211223027	86.409130103482
+33	93375	2976.73846138166	196.56008300588
+33	99279	3167.85181236189	162.10081336087
+33	105602	3384.72266533705	53.973268684876
+33	111599	3574.35179324986	40.001011050595
+34	8497	220.23074483302	229.13192665243
+34	16684	458.1910005677	494.93961734967
+34	21811	640.49258125085	375.80351447123
+34	29302	912.42502974124	1366.4277744591
+34	34966	1087.56100815831	349.69411828452
+34	41021	1295.64003937288	435.05144164093
+34	47848	1519.54650870511	28.408718870311
+34	53605	1702.02874635448	34.665083874743
+34	59205	1883.75461690541	619.48168090767
+34	65426	2068.74874395963	762.65117920099
+34	70812	2242.46989150013	1639.2045135673
+34	77115	2443.38944274433	87.593935611209
+34	82201	2624.71450147401	110.21300123537
+34	87506	2796.1648840531	99.171114471957
+34	93271	2974.05952023119	922.61168295751
+34	99226	3167.33612044248	423.88718643083
+34	104775	3346.87953449364	546.76452958816
+34	110374	3527.9321911008	785.8728714519
+35	8701	224.57488879162	1279.0931553233
+35	13665	407.65140740956	753.83606742174
+35	18773	582.47990626939	1012.5865445359
+35	27608	824.06092097713	355.99485758336
+35	32789	995.37718319338	83.582211595763
+35	37608	1176.79612417484	1203.4360133083
+35	45158	1412.1136900281	961.57414520128
+35	50715	1603.11341265997	439.69840627528
+35	56921	1797.77655012786	1677.7388442017
+35	62298	1976.87438099756	746.91717860105
+35	71116	2258.24688869397	22.294950413043
+35	77982	2480.66891864226	510.0523245214
+35	83834	2684.78051410156	243.70217776965
+35	90958	2898.31194456222	1508.8834784242
+35	96091	3073.14102985229	564.87915187514
+35	101145	3254.94784182316	413.31125450589
+35	106634	3426.84128059903	69.293229693997
+36	8754	224.90975928844	246.47839444111
+36	13847	409.95226573554	1956.3432071944
+36	19010	585.94195558573	599.42016646677
+36	25743	785.61996614335	1435.6840462429
+36	30912	966.51238760756	1557.4990875919
+36	37987	1182.57386858935	21.144953362602
+36	42698	1359.19807766265	173.27394484316
+36	48269	1539.53811772611	304.49317688204
+36	53977	1717.25008752174	240.77298270682
+36	59841	1905.48846474726	929.27364694734
+36	65933	2092.50196076419	198.03586205182
+36	71862	2269.90123203461	599.54997190249
+36	78755	2503.70131181682	334.43804958954
+36	83614	2680.50262773071	639.87384077455
+36	89274	2873.59964217872	353.68410122808
+36	96537	3082.39701282322	272.05762028852
+36	101331	3257.27759691951	591.0082068727
+36	107680	3469.35843464087	325.98249685208
+37	8935	226.74547851916	1791.0084449685
+37	14076	415.77378470842	56.081549977402
+37	19604	593.42352742625	150.41198238297
+37	26535	798.89024268404	130.05067807539
+37	31690	977.41241020334	416.69684296107
+37	38928	1202.96781226507	871.12229696841
+37	44132	1389.32002861328	699.65858081026
+37	49553	1565.30346176128	143.8876036847
+37	55045	1752.13509705739	96.466751331191
+37	61624	1959.65581204905	169.72433235037
+37	67312	2139.30410470308	369.23607390422
+37	73190	2320.52851183961	581.28156061565
+37	78465	2498.96705534963	1211.6206305442
+37	84123	2688.15199428617	584.38478738412
+37	89666	2880.17969513072	473.46860521374
+37	97075	3097.6405169549	419.55177612062
+37	102479	3295.64246252148	490.94456935104
+37	107840	3470.99216820746	486.4323998945
+38	9065	228.8337864253	611.94950665488
+38	13607	406.82499504566	913.42190625023
+38	18616	580.00748850066	392.95953995625
+38	23958	751.37315870299	662.14870290764
+38	29845	947.24951819601	233.10038207517
+38	35992	1141.25732140063	1254.7060635745
+38	46800	1473.1953815417	592.76185351883
+38	52438	1651.30502984747	255.11506229465
+38	57762	1830.00111314033	41.811292598049
+38	63338	2003.3320024095	650.93346355345
+38	68601	2175.17954637037	108.75095355779
+38	74260	2353.32563110484	279.95237190834
+38	79827	2549.97423331165	181.55102407326
+38	85514	2732.32201795452	240.49320371139
+38	91398	2922.75653676199	2.7072674896427
+38	97365	3101.99625783088	642.80892977946
+38	104722	3346.34432386041	742.45369558726
+38	111208	3549.77100673469	237.7150435469
+39	9206	233.38383626168	330.87596884249
+39	15844	442.87512825297	42.90166781786
+39	20939	614.10140778464	1075.3147590196
+39	26423	797.05580739027	1131.3721204626
+39	32173	986.25402317953	160.08372493715
+39	39409	1210.14362868021	150.09088256992
+39	45025	1407.95264161408	1599.429205515
+39	52207	1648.89618552946	556.17254204533
+39	57462	1820.57721931478	1410.115732552
+39	63077	2001.42897916696	292.83955765921
+39	68886	2180.8943871743	817.55113324808
+39	74506	2366.01545453317	1081.3004535576
+39	80443	2566.72780512415	352.79635960197
+39	85837	2743.96216020119	947.05212307369
+39	92177	2945.98965617607	1174.8270234066
+39	98016	3118.53061298361	580.48685394197
+39	102962	3301.28198676539	876.07742656339
+39	108945	3492.51545926028	87.707697206356
+40	9260	233.6979425411	1472.3568557967
+40	13968	415.07155467628	582.94158958486
+40	19140	587.45965619576	567.34117319736
+40	24789	773.53229854602	194.40593781331
+40	30106	956.58721209875	171.21598136187
+40	37288	1173.88679340294	146.01479142639
+40	43177	1375.04080189318	1206.8815536823
+40	50496	1592.16113893434	832.44314081753
+40	55716	1765.14958919005	1674.6874839392
+40	61014	1944.17424168839	83.645645078072
+40	67921	2156.54973540394	57.927459599503
+40	73801	2345.5244122899	889.74450401417
+40	79587	2529.25563999193	290.7353373176
+40	85405	2724.94554727162	317.62465220209
+40	91630	2925.50854717696	564.32347979189
+40	97608	3106.1353244454	887.0062111112
+40	103158	3305.84409090809	151.25803604453
+40	109438	3496.98641942582	837.63605071107
+41	9315	234.97346815485	290.4134036871
+41	14710	421.383084859	978.86122478917
+41	19548	592.9257163646	227.8022409804
+41	24678	769.99479636295	854.32609759532
+41	29738	941.99085418465	391.61524595039
+41	35408	1128.94820252142	72.47084173858
+41	41152	1307.41035844596	550.5742434306
+41	48856	1551.49768711182	499.37563390664
+41	56178	1781.06176814143	1476.6549094873
+41	61286	1954.15260017113	1662.6197132173
+41	67445	2143.01992343461	858.77178569795
+41	72959	2316.87868328948	66.285590867066
+41	78352	2495.05907758241	45.633647122471
+41	86135	2753.30772320432	191.1235173278
+41	92012	2940.02455013781	246.60602311228
+41	98580	3138.25480695934	278.05200651491
+41	104426	3335.37443825085	122.9318873348
+41	109917	3509.42156721986	339.88072456138
+42	9547	237.2716064604	658.68847959086
+42	14517	419.02772061262	41.411457308243
+42	20082	600.74255262094	2032.3707013505
+42	24843	773.89175214445	228.53914163115
+42	32630	994.21796094102	235.91814271858
+42	38344	1192.41416546996	1033.4409461755
+42	42943	1369.96005800239	114.21031772549
+42	48397	1543.79087747952	298.38132658121
+42	54321	1724.36048780563	841.52143554628
+42	59604	1899.17406195264	238.72228062238
+42	65742	2080.06950356824	2.9080746947419
+42	71323	2260.11426500064	135.83194377226
+42	77740	2472.55486448795	958.07425070971
+42	84811	2703.40589729208	335.52117693045
+42	90659	2895.09272508742	1320.9080115134
+42	96724	3086.41535698747	676.83874930082
+42	102142	3290.4663004611	501.5787553569
+42	107556	3468.6018289203	505.59131560062
+43	9603	238.17282929341	1382.1741103369
+43	16444	452.12417027118	978.91786429359
+43	21918	641.76072387993	711.48447404251
+43	28660	884.60337974629	112.15277752467
+43	34338	1071.38235930332	56.358363636391
+43	40140	1256.94141763761	764.08728890091
+43	46274	1445.71257955541	104.38122614074
+43	51321	1617.67674584748	865.7978107254
+43	56816	1796.90765916382	147.53739213887
+43	62837	1994.93291003518	1532.1058518723
+43	68364	2172.91882279376	57.067183804958
+43	75279	2392.34044260547	805.92211907353
+43	81643	2594.0123616412	116.59932100614
+43	86835	2777.29620478159	278.99821257331
+43	92705	2954.0553434102	324.09851300636
+43	98526	3136.93557262754	136.34182369543
+43	103908	3318.47020951945	104.57777570361
+43	108839	3491.81614745713	35.636393472378
+44	9787	240.47664232904	138.92743817283
+44	17190	489.03751785867	2775.5926057495
+44	22867	663.52437618362	536.75342960457
+44	29171	902.90990805202	224.43240164354
+44	34466	1075.42710881223	275.83862995192
+44	40506	1265.90021993044	661.89649605383
+44	47254	1500.39342009478	689.72109289022
+44	56475	1790.59814693712	104.52580381751
+44	62969	2000.00538195158	131.60681454642
+44	70179	2228.60956461883	616.25700227111
+44	76496	2428.14284123694	127.31337814038
+44	81966	2614.89797927115	944.84425040555
+44	88205	2839.94668506109	1821.8216335364
+44	95032	3062.94716737441	344.41357308988
+44	100278	3239.8199401533	1619.6246034072
+44	108267	3475.27083827244	226.82318649349
+45	10053	244.9997770948	91.297021687406
+45	15068	426.9935783863	98.140701392182
+45	20499	610.60960607438	68.700938827395
+45	25688	784.35538205462	1820.2100483686
+45	31257	969.5534239265	819.74369077948
+45	36372	1153.82567003105	426.29404996594
+45	42570	1356.3751800417	3.2717150884405
+45	51679	1631.80039397678	170.19850502593
+45	58233	1840.81856621237	1391.3521775276
+45	63727	2015.49218009957	231.31622660147
+45	69232	2194.12625058275	238.77202190046
+45	74640	2374.09965627613	716.15650968055
+45	80382	2565.01710855279	641.9813233143
+45	87668	2801.93870370863	214.68184439777
+45	93855	2996.52871359007	1258.7646526575
+45	99574	3179.32199000143	1299.1791813805
+45	105437	3369.90054236161	592.83056737917
+45	111470	3569.20662853219	479.71751035117
+46	10162	245.98637980058	323.17248753202
+46	15256	430.10303205238	130.61086040763
+46	21568	632.86534613276	152.24670937635
+46	27131	813.28610725937	393.96680348643
+46	33150	1002.1059509424	873.80473151546
+46	38397	1193.65536064163	210.51175838932
+46	45342	1416.42936642022	3062.96068158
+46	50610	1600.03393263861	231.89658205157
+46	56602	1794.19776006338	562.19093460145
+46	64967	2052.93257097272	1260.3279042294
+46	70310	2234.70085197358	1214.8416682941
+46	76259	2423.10348954186	61.625717479533
+46	84477	2693.31922102978	3.3487600644996
+46	90150	2889.529571982	368.3824031966
+46	95191	3063.7892661094	353.43040820031
+46	100861	3250.65758044175	205.92438249953
+46	106739	3427.48082707172	0.026787859956368
+47	10377	248.41829836204	552.29868830595
+47	15740	442.45665595803	1168.2184453741
+47	21045	614.95569661678	325.75342560938
+47	27016	808.92871592141	1183.6036934668
+47	33257	1005.14252130508	850.81756816776
+47	37851	1180.1930522516	963.94621359109
+47	44380	1393.18910548061	767.47386305742
+47	49876	1573.50749233451	355.13261800711
+47	54915	1746.92781697742	582.23016592016
+47	61443	1956.8492796377	1481.8284630442
+47	67797	2153.98021234519	778.00701286481
+47	73330	2330.34078413814	443.00252737901
+47	80151	2561.55265339338	323.41969879982
+47	85891	2744.89245768789	1206.8964298079
+47	93615	2981.55507631126	273.8198986735
+47	100169	3212.56967661406	355.76036273381
+47	105948	3405.87584343745	274.6422457091
+47	111895	3593.28561327826	64.202078544671
+48	10491	250.27410845578	188.55803228867
+48	15687	441.76346693812	31.756329188296
+48	23238	684.53791008399	129.09334366564
+48	28551	880.24907857527	736.15304563529
+48	34593	1077.42841180093	611.64256078793
+48	40803	1274.2396674935	593.2257017562
+48	46664	1462.80970433431	540.97157403578
+48	52098	1644.52093390555	461.96667497134
+48	57587	1821.48944229247	544.28880030019
+48	63022	2000.18305692008	422.54891544409
+48	68238	2171.77328054551	156.31058939089
+48	74042	2349.56276419031	58.614940161545
+48	80624	2567.37961564328	145.22189517768
+48	86560	2765.70377700152	1098.6707148834
+48	92651	2953.59996058622	580.32911879134
+48	98420	3132.96109750524	308.97525988318
+48	104604	3337.24584515793	67.977064135647
+48	110267	3523.12702517134	97.969438336354
+49	10606	253.13289084057	881.02232349571
+49	16571	454.25399216043	459.45444111214
+49	22750	655.67324035449	116.63088167562
+49	27965	830.6016387654	113.69415769076
+49	33479	1019.24424057748	69.595630123782
+49	39115	1206.02484168233	293.03257387405
+49	44190	1390.61428257593	1161.1302686128
+49	51143	1616.93633871313	1954.0999503114
+49	57302	1817.44689522207	354.06504491408
+49	62729	1990.39468193134	9.5947202379083
+49	68999	2186.86787312085	58.102829851401
+49	75774	2410.76534274011	759.54333283179
+49	82097	2622.15503118966	664.70715368654
+49	88731	2847.68058312983	310.42984325285
+49	94290	3019.29832153617	91.679449905155
+49	104264	3329.43451602253	196.86183597425
+49	110021	3511.56049828603	1263.4875135356
+50	10983	262.88818956132	184.73604094364
+50	16950	475.4723715735	432.42467806648
+50	22435	650.93142312753	680.38529099196
+50	27661	824.17248482363	1080.052848856
+50	32950	997.07176145354	302.26806986445
+50	37102	1170.06461006265	106.23278812352
+50	42200	1345.16589847059	118.73294367287
+50	48131	1533.54246804492	343.83048625018
+50	54083	1719.84117738576	5.2084855125711
+50	62596	1985.19919489265	573.70757606969
+50	71969	2271.92939046462	77.102173863764
+50	77377	2463.99858528012	1181.0468124623
+50	82768	2644.31262131557	2942.4017928953
+50	88258	2840.87053782416	52.968420754647
+50	94451	3024.93545706152	1483.0452996586
+50	100038	3205.47091925113	370.22117371843
+50	106912	3441.41523346645	96.189629730388
+51	11038	263.59779002274	464.53180836603
+51	16132	445.6692462675	113.66001387691
+51	21304	620.14229757457	241.73311730486
+51	26292	794.43250673676	1637.4879763944
+51	32464	991.59553724928	581.66842052001
+51	38794	1199.7291537514	66.41915017944
+51	43602	1383.38931690724	400.05326735622
+51	50850	1609.60364660704	370.98762807287
+51	56763	1796.46126997994	77.394811623527
+51	61877	1968.23576797036	501.98723645348
+51	67608	2148.09455000028	493.83006655884
+51	73567	2341.67209703202	1454.4609405698
+51	79640	2529.38570748003	261.12180505337
+51	85103	2708.25715917331	141.35912599299
+51	91205	2902.56940944342	982.83094462238
+51	96380	3080.12688868193	546.16462594829
+51	102830	3299.22718036374	1473.367170413
+51	110501	3530.32113920142	749.62409550427
+52	11224	269.01715350726	106.20359998453
+52	15634	441.11056536564	3496.4816854139
+52	20729	612.65694024587	342.57524618803
+52	26856	806.26387506181	1373.706465283
+52	32001	981.58106591218	1012.3419065674
+52	38632	1197.43170502893	541.65129895058
+52	44509	1394.96375919383	151.67056634263
+52	51376	1618.52376401213	831.05645820604
+52	58507	1850.80338332911	323.06193850344
+52	64202	2030.14800821042	1065.7847054746
+52	69611	2212.66131256266	223.73566694205
+52	75144	2384.88233896668	636.71789484938
+52	80805	2569.08657293092	491.27074733998
+52	87962	2818.26495181095	434.29588072686
+52	93751	2993.82432605268	684.36976277889
+52	99469	3175.9289242049	445.90009354312
+52	105225	3364.83756725326	741.55435849914
+52	110800	3538.35009809324	673.85152285085
+53	11279	269.44005086873	1356.0284356861
+53	16327	448.27890586282	1395.5164795945
+53	22615	653.01568326774	580.0671470216
+53	27714	824.50846354866	391.50523599927
+53	33370	1011.86796059639	198.67665821455
+53	38221	1185.48217268764	561.94486745857
+53	43845	1387.37285104606	1340.1027604083
+53	50216	1578.4494842542	1699.5329283567
+53	55557	1763.71573777686	369.08156003262
+53	62001	1970.5189406049	965.92651659294
+53	68059	2169.0285683725	1672.4934139133
+53	73861	2347.19353320537	267.8433069015
+53	80045	2560.6869181831	40.385396141271
+53	86454	2763.66149273132	330.29561790734
+53	92230	2946.56710415267	191.81794244017
+53	98170	3120.31178240371	159.47962596475
+53	105278	3366.34741703892	208.72302161422
+53	111339	3562.55234910914	23.378680881895
+54	11436	271.88863660888	62.223017488055
+54	17074	477.45329339524	207.33129951536
+54	22379	649.81121955879	305.37585223194
+54	27501	821.91460450983	387.46241252842
+54	33691	1024.58681462477	729.46528371158
+54	38577	1196.67306178992	126.09848139646
+54	43898	1387.48665215643	121.19678067787
+54	49129	1559.62049813279	34.581756357525
+54	54546	1735.65388503843	1546.9363984274
+54	60782	1939.33285209518	61.130028088563
+54	66838	2125.3574367784	710.0327278272
+54	73461	2340.83626756478	987.63831652074
+54	82715	2643.45048796306	132.71758760717
+54	88096	2824.1080959382	2004.5495658688
+54	94125	3013.25419486111	111.10573071086
+54	99710	3189.34246327358	153.39905972743
+54	106208	3414.56954302483	282.50223128135
+54	111842	3591.88365792204	223.83127995798
+
